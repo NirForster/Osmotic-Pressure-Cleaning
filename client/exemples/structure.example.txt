@@ -1,0 +1,12 @@
+/src
+├── components/       → Reusable UI components
+├── pages/            → Route-level components (e.g. HomePage, ProductsPage)
+├── services/         → API logic (e.g. `productService.ts`)
+├── types/            → Shared TypeScript types/interfaces
+├── context/          → Global app context (auth, cart, etc.)
+├── theme/            → MUI theme overrides & global styles
+├── hooks/            → Custom React hooks
+├── utils/            → Formatters, helpers
+├── App.tsx
+├── main.tsx
+├── routes.tsx

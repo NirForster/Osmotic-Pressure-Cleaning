@@ -1,0 +1,7 @@
+/server
+├── controllers/             # business logic
+├── models/                  # Mongoose schemas
+├── routes/                  # Express routes
+├── utils/                   # DB connection, validation, etc.
+├── .env
+├── server.js

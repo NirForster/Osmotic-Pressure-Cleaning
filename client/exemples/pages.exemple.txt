@@ -1,0 +1,24 @@
+ UI Pages (based on your screenshots)
+1. Home Page
+Hero banner
+
+Category preview cards with images
+
+Company description
+
+2. Products Page
+Category filter tabs (like: אביזרים, שואבים, מכונות)
+
+List of ProductCards showing image, title, short description
+
+3. Contact Page
+Simple form with name, email, phone, message
+
+Send data to backend
+
+4. Footer
+Contact info
+
+Quick links
+
+Social icons (TikTok, IG, FB, YouTube)
