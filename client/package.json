@@ -10,9 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.1.0",
+    "@mui/styles": "^6.4.11",
     "@types/react-router-dom": "^5.3.3",
     "axios": "^1.9.0",
+    "jss": "^10.10.0",
+    "jss-rtl": "^0.3.0",
     "lottie-react": "^2.4.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
