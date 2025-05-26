@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "data": [
+    {
+      "name": "אביזרים לשטיפת רכב",
+      "url": "https://ben-gigi.co.il/מוצרים/אביזרים-לשטיפת-רכב.html",
+      "id": "LI_A_68309",
+      "categoryType": "accessories"
+    },
+    {
+      "name": "מחבר סיבובי - סביבל",
+      "url": "https://ben-gigi.co.il/מוצרים/מחבר-סיבובי-סביבל",
+      "id": "LI_A_68310",
+      "categoryType": "connectors"
+    },
+    {
+      "name": "מכונות שטיפה בלחץ מים",
+      "url": "https://ben-gigi.co.il/מוצרים/מכונות-שטיפה-בלחץ-מים",
+      "id": "LI_A_68311",
+      "categoryType": "machines"
+    },
+    {
+      "name": "ציוד ניקוי מקצועי בלחץ מים",
+      "url": "https://ben-gigi.co.il/מוצרים/ציוד-ניקוי-מקצועי-בלחץ-מים",
+      "id": "LI_A_68312",
+      "categoryType": "professional"
+    },
+    {
+      "name": "שואבי אבק",
+      "url": "https://ben-gigi.co.il/מוצרים/שואבי-אבק",
+      "id": "LI_A_68313",
+      "categoryType": "vacuum"
+    },
+    {
+      "name": "R+M",
+      "url": "https://ben-gigi.co.il/מוצרים/rm-suttner",
+      "id": "LI_A_126371",
+      "categoryType": "brand"
+    }
+  ],
+  "timestamp": "2025-05-25T20:37:20.585Z",
+  "duration": 6503,
+  "source": "https://ben-gigi.co.il/דף-הבית"
+}

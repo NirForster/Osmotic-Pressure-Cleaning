@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "data": [
+    {
+      "name": "מכונת שטיפה בלחץ מים חמים 200 בר 15 ליטר לדקה Power wash",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1423725",
+      "id": "1423725",
+      "sku": "",
+      "images": [
+        "Cat_456349_165.png"
+      ],
+      "previewImage": "Cat_456349_165.png",
+      "categoryId": "LI_A_68311",
+      "categoryName": "מכונות שטיפה בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "",
+      "bulletPoints": []
+    },
+    {
+      "name": "מכונת שטיפה בלחץ מים קרים חשמלית HYPER C 20015 LP  lavor",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1411648",
+      "id": "1411648",
+      "sku": "",
+      "images": [
+        "Cat_456349_161.jpg"
+      ],
+      "previewImage": "Cat_456349_161.jpg",
+      "categoryId": "LI_A_68311",
+      "categoryName": "מכונות שטיפה בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "מכונת שטיפה בלחץ מים קרים מדגם \"HYPER C 200\\15\". המכשיר מצוייד במערכת לדימום אוטומטית.בעל עיצוב חדיש, עם 2 גלגלי נסיעה גדולים במיוחד.",
+      "bulletPoints": [
+        "לחץ: 200 בר.",
+        "ספיקה: 15 ליטר בדקה.",
+        "מנוע: KW 9.52 כ\"ס 1450 סל\"ד, עם קירור מים והגנת מנוע נגד התחממות.",
+        "מערכת חשמל: מערכת כיבוי והדלקה – מוגני מים, אוטומטים כולל השהייה בדימום.",
+        "משאבה: “LAVOR” דגם HYPER C 200/15  1450 סל\"ד בוכנות קרמיקה.מגן חום אוטומטי",
+        "מידות: 83 ס\"מ  X 90 ס\"מ X 50 ס\"מ.",
+        "משקל: 48 ק\"ג.",
+        "אביזרים נלווים: אקדח עם דיזה, צינור לחץ משוריין 5/16  באורך 10 מ'."
+      ]
+    }
+  ],
+  "timestamp": "2025-05-25T22:09:26.740Z",
+  "category": "מכונות שטיפה בלחץ מים",
+  "totalProducts": 2
+}

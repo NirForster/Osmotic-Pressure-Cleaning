@@ -1,0 +1,810 @@
+{
+  "success": true,
+  "data": [
+    {
+      "name": "מסיר מסטיקים (Gum Remover)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171064",
+      "id": "1171064",
+      "sku": "FL-AHB-KAU, FL-AHK-KAU",
+      "images": [
+        "Cat_456349_188.jpg",
+        "Cat_456349_192.jpg",
+        "Cat_456349_190.jpg",
+        "Cat_456349_188.jpg",
+        "Cat_456349_190.jpg",
+        "Cat_456349_191.jpg",
+        "Cat_456349_192.jpg"
+      ],
+      "previewImage": "Cat_456349_188.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "עם מכשיר הניקוי \"הכל באחד\",  Mosmatic  לוקחת את הניקיון לקצה. הסרת מסטיקים לעוסים מאזורים ציבוריים כגון מדרכות, תחנות רכבת, פארקים ומתקני בית ספר.",
+      "bulletPoints": [
+        "ניקיון יעיל ומועיל",
+        "כולל שיטת שחזור הנוזלים",
+        "בסיס להסרת מסטיקים"
+      ]
+    },
+    {
+      "name": "מקצועי (Professional)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171063",
+      "id": "1171063",
+      "sku": "FL-AH, FL-AHY",
+      "images": [
+        "Cat_456349_189.jpg",
+        "Cat_456349_205.jpg",
+        "Cat_456349_203.jpg",
+        "Cat_456349_189.jpg",
+        "Cat_456349_203.jpg",
+        "Cat_456349_204.jpg",
+        "Cat_456349_205.jpg"
+      ],
+      "previewImage": "Cat_456349_189.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "המנקה המקצועי מבית Mosmatic  בעל פונקציית שחזור, אידיאלי לניקוי משטחים גדולים בפנים ובחוץ. מים מלוכלכים משוחזרים באמצעות מערכת השאיבה וניתנים להשלכה או למחזור.",
+      "bulletPoints": [
+        "גובה מתכוונן",
+        "כולל שיטת שחזור הנוזלים",
+        "מיועד לניקיון מקצועי"
+      ]
+    },
+    {
+      "name": "רב תכליתי (Allrounder)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171062",
+      "id": "1171062",
+      "sku": "FL-AER, FL-AEB",
+      "images": [
+        "Cat_456349_206.jpg",
+        "Cat_456349_389.jpg",
+        "Cat_456349_386.jpg",
+        "Cat_456349_206.jpg",
+        "Cat_456349_386.jpg",
+        "Cat_456349_387.jpg",
+        "Cat_456349_388.jpg",
+        "Cat_456349_389.jpg"
+      ],
+      "previewImage": "Cat_456349_206.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "המכשיר הרב תכליתי מבית Mosmatic אידיאלי לאזורים קטנים ולא נגישים בשימוש פנימי וחיצוני. עיצוב קומפקטי וקל המאפשר ביצוע עבודות קטנות וגדולות.",
+      "bulletPoints": [
+        "בשילוב פקה סיבובית באיכות גבוהה",
+        "כולל שיטת שחזור הנוזלים",
+        "מוכן לשימוש"
+      ]
+    },
+    {
+      "name": "הליקופטר רב תכליתי (AQUA)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1481480",
+      "id": "1481480",
+      "sku": "FL-SAR",
+      "images": [
+        "Cat_456349_168.jpg",
+        "Cat_456349_385.jpg",
+        "Cat_456349_384.jpg",
+        "Cat_456349_168.jpg",
+        "Cat_456349_384.jpg",
+        "Cat_456349_385.jpg"
+      ],
+      "previewImage": "Cat_456349_168.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "המכשיר הרב תכליתי מבית Mosmatic עכשו עם מערכת ואקום לשאיבה של המים ללא אמצעים נוספים, אידיאלי לאזורים קטנים ולא נגישים בשימוש פנימי וחיצוני. עיצוב קומפקטי וקל המאפשר ביצוע עבודות קטנות וגדולות.",
+      "bulletPoints": [
+        "מאפשר שאיבה של המים ללא אמצעים נוספים.",
+        "בשילוב פקה סיבובית באיכות גבוהה.",
+        "מוכן לשימוש."
+      ]
+    },
+    {
+      "name": "הליקופטר רב תכליתי פרו (AQUA-PROׁׁׁׂׂׂ)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=2542882",
+      "id": "2542882",
+      "sku": "FL-SAR",
+      "images": [
+        "Cat_456349_187.jpg",
+        "Cat_456349_383.jpg",
+        "Cat_456349_382.jpg"
+      ],
+      "previewImage": "Cat_456349_187.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "Mosmatic Aqua Pro החדש עם מערכת משולבת לשחזור מים. שואב משטח זה אינו דורש שואב תעשייתי חיצוני. הודות לזרבובית הוונטורי המחוברת ישירות לבית, ניתן לשפוך את מי השפכים עם צינור שואב סטנדרטי. ה-Aqua Pro יכול לנקות ולהתאושש או שניהם בו זמנית.",
+      "bulletPoints": [
+        "שחזור משולב",
+        "טמפרטורות עד 120 מעלות צלזיוס",
+        "רב שימושי"
+      ]
+    },
+    {
+      "name": "מסיר גרפיטי (Graffiti Remover)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171061",
+      "id": "1171061",
+      "sku": "FL-ABB, FL-ABK",
+      "images": [
+        "Cat_456349_430.webp",
+        "Cat_456349_381.jpg",
+        "Cat_456349_378.jpg",
+        "Cat_456349_379.jpg",
+        "Cat_456349_380.jpg"
+      ],
+      "previewImage": "Cat_456349_430.webp",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "מסיר הגרפיטי בעל יכולת סיבוב וזרוע מדחף ליישומים תעשייתיים כגון הסרת גרפיטי. משמש למגוון נרחב של משטחים, בשימוש פנימי וחיצוני.",
+      "bulletPoints": [
+        "עוצב ללחץ גבוה",
+        "כולל שיטת שחזור הנוזלים",
+        "מוכן לשימוש"
+      ]
+    },
+    {
+      "name": "קבלן (Contractor)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=2542983",
+      "id": "2542983",
+      "sku": "FL-PH",
+      "images": [
+        "Cat_456349_194.jpg",
+        "Cat_456349_377.jpg",
+        "Cat_456349_374.jpg",
+        "Cat_456349_194.jpg",
+        "Cat_456349_374.jpg",
+        "Cat_456349_375.jpg",
+        "Cat_456349_376.jpg",
+        "Cat_456349_377.jpg"
+      ],
+      "previewImage": "Cat_456349_194.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "אין אי סדר שיעמוד בפני המכונה הזו. מנקה המשטחים הזה מתאים לניקוי משטחים גדולים כגון: תחנות דלק, מגרשי חניה, מגרשי בית ספר, מקומות ציבוריים, רציפים ועוד.",
+      "bulletPoints": [
+        "אקדח שטיפה בנוסף",
+        "הרכב מוצק",
+        "גובה מתכוונן"
+      ]
+    },
+    {
+      "name": "הליקופטר + אקדח (Contractor Big)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171076",
+      "id": "1171076",
+      "sku": "FL-PB",
+      "images": [
+        "Cat_456349_195.jpg",
+        "Cat_456349_373.jpg",
+        "Cat_456349_369.jpg",
+        "Cat_456349_195.jpg",
+        "Cat_456349_369.jpg",
+        "Cat_456349_370.jpg",
+        "Cat_456349_371.jpg",
+        "Cat_456349_372.jpg",
+        "Cat_456349_373.jpg"
+      ],
+      "previewImage": "Cat_456349_195.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "אין אי סדר שיעמוד בפני המכונה הזו. מנקה המשטחים הזה מתאים לניקוי משטחים גדולים כגון: תחנות דלק, מגרשי חניה, מגרשי בית ספר, מקומות ציבוריים, רציפים ועוד.",
+      "bulletPoints": [
+        "אקדח שטיפה בנוסף",
+        "הרכב מוצק",
+        "גובה מתכוונן"
+      ]
+    },
+    {
+      "name": "מסחרי (Commercial)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171074",
+      "id": "1171074",
+      "sku": "FL-CG, FL-CR, FL-RY",
+      "images": [
+        "Cat_456349_6.jpg",
+        "Cat_456349_368.jpg",
+        "Cat_456349_365.jpg",
+        "Cat_456349_6.jpg",
+        "Cat_456349_365.jpg",
+        "Cat_456349_366.jpg",
+        "Cat_456349_367.jpg",
+        "Cat_456349_368.jpg"
+      ],
+      "previewImage": "Cat_456349_6.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "מנקה המשטחים ליישום במים חמים או קרים, מגיע לשיא ביצועיו ללא כל תחזוקה. המנקה המפורסם שלנו למשטחים ישרים אידיאלי לניקוי מגרשי חניה, תחנות דלק, מגרשי בית ספר ועוד.",
+      "bulletPoints": [
+        "קיים דגם זמין עד 500 בר.",
+        "מוכן לשימוש",
+        "ללא צורך בתחזוקה"
+      ]
+    },
+    {
+      "name": "כללי (Universal)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171075",
+      "id": "1171075",
+      "sku": "FL-EB, FL-EG, FL-ER, FL-ERG",
+      "images": [
+        "Cat_456349_431.webp",
+        "Cat_456349_364.jpg",
+        "Cat_456349_361.jpg",
+        "Cat_456349_362.jpg",
+        "Cat_456349_363.jpg"
+      ],
+      "previewImage": "Cat_456349_431.webp",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "מנקה המשטחים, קל המשקל  והרב שימושי, מתאים לניקוי כל משטח ישר. ניתן לנקות קירות, מדרגות וכן מדרכות ומשטחי  עץ. הסדרה החסכונית קיימת במגוון גדלים ועיצובים בכדי להתאים לצרכים שלך.",
+      "bulletPoints": [
+        "מוכן להתקנה",
+        "רב שימושי, מתאים לכל סוגי המשטחים",
+        "זמין במגוון עיצובים"
+      ]
+    },
+    {
+      "name": "מנקה הקיטור (Steaminator)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171077",
+      "id": "1171077",
+      "sku": "STM",
+      "images": [
+        "Cat_456349_432.webp",
+        "Cat_456349_360.jpg",
+        "Cat_456349_357.jpg",
+        "Cat_456349_358.jpg",
+        "Cat_456349_359.jpg"
+      ],
+      "previewImage": "Cat_456349_432.webp",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "ניתן לנקות קירות ומשטחים אחרים בקיטור. חסוך זמן יקר עם מנקה הקיטור. זוהי הדרך הטובה ביותר לחטא, לעקר ולהסיר שומן ממשטחים.  המכשיר מקצר את העבודה ב4-5 פעמים מניקוי במגב.",
+      "bulletPoints": [
+        "משטחים שעברו ניקוי בקיטור מתייבשים בהבזק",
+        "הזווית וההינע ניתנים לכוונון",
+        "חסכון אדיר בזמן"
+      ]
+    },
+    {
+      "name": "הוריקן פליפ (Hurricane_Flip_EU)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=2150119",
+      "id": "2150119",
+      "sku": "HURF",
+      "images": [
+        "Cat_456349_433.webp",
+        "Cat_456349_356.jpg",
+        "Cat_456349_355.jpg"
+      ],
+      "previewImage": "Cat_456349_433.webp",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "הוריקן פליפ יכול לשמש כמנקה משטחים וגם תחתיות רכבים תקרות וכדומה, הכל ביחידה אחת. הודות לפרופיל הנמוך, אין צורך להרים את הרכב על במה לניקוי. ה-Hurricane Flip חוסך זמן, חסכוני וניתן להפעיל אותו עם מים קרים וחמים.",
+      "bulletPoints": [
+        "2- ב1",
+        "יחידת נירוסטה באיכות גבוהה",
+        "בעל שימוש רב תכליתי"
+      ]
+    },
+    {
+      "name": "הוריקן (Hurricane)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=2542988",
+      "id": "2542988",
+      "sku": "HUR",
+      "images": [
+        "Cat_456349_434.webp",
+        "Cat_456349_354.jpg",
+        "Cat_456349_351.jpg",
+        "Cat_456349_352.jpg",
+        "Cat_456349_353.jpg"
+      ],
+      "previewImage": "Cat_456349_434.webp",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "עם דגם ההוריקן Pro תוכל לנקות מתחת לכלי רכב, אך לא רק, באפשרותך לסובב את ראש הריסוס על צירו ולנקות בזווית שונות.",
+      "bulletPoints": [
+        "ארגונומי ורב גוני",
+        "מוכן לשימוש",
+        "קל לתמרון"
+      ]
+    },
+    {
+      "name": "הוריקן פרו (Hurricane Pro)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171084",
+      "id": "1171084",
+      "sku": "HURp, HURpz",
+      "images": [
+        "Cat_456349_435.webp",
+        "Cat_456349_350.jpg",
+        "Cat_456349_347.jpg",
+        "Cat_456349_435.webp",
+        "Cat_456349_347.jpg",
+        "Cat_456349_348.jpg",
+        "Cat_456349_349.jpg",
+        "Cat_456349_350.jpg"
+      ],
+      "previewImage": "Cat_456349_435.webp",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "עם דגם ההוריקן Pro תוכל לנקות מתחת לכלי רכב, אך לא רק, באפשרותך לסובב את ראש הריסוס על צירו ולנקות בזווית שונות.",
+      "bulletPoints": [
+        "ארגונומי ורב גוני",
+        "מוכן לשימוש",
+        "קל לתמרון"
+      ]
+    },
+    {
+      "name": "מנקה גגות (Roof Cleaner)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171082",
+      "id": "1171082",
+      "sku": "DR-520",
+      "images": [
+        "Cat_456349_10.jpg",
+        "Cat_456349_346.jpg",
+        "Cat_456349_343.jpg",
+        "Cat_456349_10.jpg",
+        "Cat_456349_343.jpg",
+        "Cat_456349_344.jpg",
+        "Cat_456349_345.jpg",
+        "Cat_456349_346.jpg"
+      ],
+      "previewImage": "Cat_456349_10.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "המנקה המקצועי מבית Mosmatic  בעל פונקציית שחזור, אידיאלי לניקוי משטחים גדולים בפנים ובחוץ. מים מלוכלכים משוחזרים באמצעות מערכת השאיבה וניתנים להשלכה או למחזור.",
+      "bulletPoints": [
+        "גובה מתכוונן",
+        "כולל שיטת שחזור הנוזלים",
+        "מיועד לניקיון מקצועי"
+      ]
+    },
+    {
+      "name": "מחבר סיבובי WDC",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=2554740",
+      "id": "2554740",
+      "sku": "",
+      "images": [
+        "Cat_456349_390.jpg"
+      ],
+      "previewImage": "Cat_456349_390.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "",
+      "bulletPoints": []
+    },
+    {
+      "name": "חלקי חילוף (Surface Cleaner Upgrade Kit)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171083",
+      "id": "1171083",
+      "sku": "FL-Z",
+      "images": [
+        "Cat_456349_11.jpg",
+        "Cat_456349_342.jpg",
+        "Cat_456349_339.jpg",
+        "Cat_456349_340.jpg",
+        "Cat_456349_341.jpg"
+      ],
+      "previewImage": "Cat_456349_11.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "לאלו שאין ברשותם מכשיר של Mosmatic ורוצים לשדרג את הציוד הקיים. ערכת ההמרה תאפשר לך להחליף את חלקי העבודה החשובים של מנקה המשטחים שלך ברכיבים באיכות גבוהה של Mosmatic.",
+      "bulletPoints": [
+        "שדרוג בעלות ריאלית",
+        "קל להרכבה"
+      ]
+    },
+    {
+      "name": "מנקה תעלות (Duct Cleaner)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171085",
+      "id": "1171085",
+      "sku": "TYR, TRR",
+      "images": [
+        "Cat_456349_13.jpg",
+        "Cat_456349_338.jpg",
+        "Cat_456349_335.jpg",
+        "Cat_456349_13.jpg",
+        "Cat_456349_335.jpg",
+        "Cat_456349_336.jpg",
+        "Cat_456349_337.jpg",
+        "Cat_456349_338.jpg"
+      ],
+      "previewImage": "Cat_456349_13.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "מנקה תעלות אוורור, מדרונות אשפה, צינורות, מכלים, פירים ומכלים גדולים. ללא תחזוקה, היחידה מסתובבת לבד, הראש מסתובב בתוך הסורגים העוטפים אותו ומכוון לחץ גבוה למשטח.",
+      "bulletPoints": [
+        "התקנה פשוטה",
+        "פלדת אל חלד עם סיבוב עצמאי",
+        "דגמים הניתנים לכוונון וכן כאלה שלא"
+      ]
+    },
+    {
+      "name": "מוט TRL",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171088",
+      "id": "1171088",
+      "sku": "TRL",
+      "images": [
+        "Cat_456349_16.jpg",
+        "Cat_456349_334.jpg",
+        "Cat_456349_331.jpg",
+        "Cat_456349_16.jpg",
+        "Cat_456349_331.jpg",
+        "Cat_456349_332.jpg",
+        "Cat_456349_333.jpg",
+        "Cat_456349_334.jpg"
+      ],
+      "previewImage": "Cat_456349_16.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "לראש המסתובב 3 נחירים כלולים, 2 ניתנים לכוונון וממוקמים בצד ואחד בסוף היחידה.",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "מוט ניקוי שלם עם ראש מסתובב מיועד לניקוי מכלים, פחי אשפה ושירותים ניידים.",
+      "bulletPoints": [
+        "פתרון מושלם",
+        "אספקה במצב מוכן להתקנה",
+        "עיצוב ארגונומי"
+      ]
+    },
+    {
+      "name": "מוטות שטיפה מיוחדים (HP Special Lances)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1411633",
+      "id": "1411633",
+      "sku": "Rotor, Gum, Standard",
+      "images": [
+        "Cat_456349_160.jpg",
+        "Cat_456349_330.jpg",
+        "Cat_456349_329.jpg",
+        "Cat_456349_160.jpg",
+        "Cat_456349_329.jpg",
+        "Cat_456349_330.jpg"
+      ],
+      "previewImage": "Cat_456349_160.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "מבחר מוטות מבית Mosmatic אידיאלי לניקיון מגוון שימושים. יכול להיות מחובר לדיזה טורבו, דיזה מסירה מסטיקים או עם דיזת מניפה שטוחה רגילה.",
+      "bulletPoints": [
+        "סיביבל בחיבור לצינור כניסה",
+        "מחבר דיזות הניתנות לחיבור",
+        "ידית נוסף לאחיזה נוחה ובטוחה"
+      ]
+    },
+    {
+      "name": "מנקה ביובים (Manhole Cleaner)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=2810058",
+      "id": "2810058",
+      "sku": "TXS",
+      "images": [
+        "Cat_456349_437.webp",
+        "Cat_456349_439.jpg",
+        "Cat_456349_438.jpg",
+        "Cat_456349_437.webp",
+        "Cat_456349_438.jpg",
+        "Cat_456349_439.jpg"
+      ],
+      "previewImage": "Cat_456349_437.webp",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "המנקה המקצועי מבית Mosmatic  בעל פונקציית שחזור, אידיאלי לניקוי משטחים גדולים בפנים ובחוץ. מים מלוכלכים משוחזרים באמצעות מערכת השאיבה וניתנים להשלכה או למחזור.",
+      "bulletPoints": [
+        "גובה מתכוונן",
+        "כולל שיטת שחזור הנוזלים",
+        "מיועד לניקיון מקצועי"
+      ]
+    },
+    {
+      "name": "מנקה מיכלים (Tank Cleaner)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171089",
+      "id": "1171089",
+      "sku": "TAR",
+      "images": [
+        "Cat_456349_440.webp",
+        "Cat_456349_328.jpg",
+        "Cat_456349_327.jpg",
+        "Cat_456349_440.webp",
+        "Cat_456349_327.jpg",
+        "Cat_456349_328.jpg"
+      ],
+      "previewImage": "Cat_456349_440.webp",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "הודות לטכנולוגיה חדשנית, ניתן להתאים בקלות את מהירות הסיבוב כך שתתאים לביצועי המשאבה.",
+      "bulletPoints": [
+        "ניקוי פנימי 360°",
+        "בקרת מהירות משתנה ללא סוף",
+        "בלם מגנטי משולב"
+      ]
+    },
+    {
+      "name": "ראש ניקוי עכביש (Spider)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171087",
+      "id": "1171087",
+      "sku": "complete, individual, adjustable",
+      "images": [
+        "Cat_456349_15.jpg",
+        "Cat_456349_326.jpg",
+        "Cat_456349_323.jpg",
+        "Cat_456349_15.jpg",
+        "Cat_456349_323.jpg",
+        "Cat_456349_324.jpg",
+        "Cat_456349_325.jpg",
+        "Cat_456349_326.jpg"
+      ],
+      "previewImage": "Cat_456349_15.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "הראש המסתובב מצויד ב-4 נחירים יציבים אשר מאפשרים ניקוי כל סוגי המשטחים ממרחק ללא הפחתה בלחץ.",
+      "bulletPoints": [
+        "ראש מונחה הידרו מלא לשטיפת כלי רכב",
+        "השפעת הנחירים היציבים בטווח נרחב",
+        "פלדת אל חלד"
+      ]
+    },
+    {
+      "name": "אקדחי HP",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171091",
+      "id": "1171091",
+      "sku": "Aero, Nano, Neo, Starlet",
+      "images": [
+        "Cat_456349_441.webp",
+        "Cat_456349_322.jpg",
+        "Cat_456349_320.jpg",
+        "Cat_456349_441.webp",
+        "Cat_456349_320.jpg",
+        "Cat_456349_321.jpg",
+        "Cat_456349_322.jpg"
+      ],
+      "previewImage": "Cat_456349_441.webp",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "Mosmatic מציעה מגוון אקדחים ללחץ גבוה. החל מאקדחי פעולה רגועה המציעים 90% פחות החזקה ו-40% פחות כוח בהפעלת ההדק, וכלה בדגמים עם סיבוב מובנה. עיצוב דגם רגיל ודגם עם חור ניקוז זמינים גם.",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "Aero, Nano, Neo",
+      "bulletPoints": [
+        "זמין עם פעולת חור ניקוז",
+        "מעוצב ארגונומית",
+        "אפשרות לפעולה רגועה",
+        "",
+        ""
+      ]
+    },
+    {
+      "name": "זרועות חוגה (Rotor Arms)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171092",
+      "id": "1171092",
+      "sku": "TKA, TKE",
+      "images": [
+        "Cat_456349_20.jpg",
+        "Cat_456349_319.jpg",
+        "Cat_456349_316.jpg",
+        "Cat_456349_317.jpg",
+        "Cat_456349_318.jpg"
+      ],
+      "previewImage": "Cat_456349_20.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "מרותכות ומאוזנות להורדת סכנת רטט ומבטיחות ביצוע חלק. ·         פלדת אל-חלד מבריקה ·         עיצוב מוצק אך קל·         דגמי 275 ו/או 500 בר זמינים פלדת אל-חלד",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "זרועות חוגה ללחץ גבוה מעוצבות  מפלדת אל חלד ומגיעות במגוון תצורות.",
+      "bulletPoints": []
+    },
+    {
+      "name": "דיזות (Nozzles)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171090",
+      "id": "1171090",
+      "sku": "EG, HP, Stabilizer Nozzle",
+      "images": [
+        "Cat_456349_442.webp",
+        "Cat_456349_315.jpg",
+        "Cat_456349_314.jpg"
+      ],
+      "previewImage": "Cat_456349_442.webp",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "Mosmatic מציעה מגגון נחירים ללחץ גבוה מפלדת אל-חלד קשה. כל נחירי Washjet זמינים במגוון גדלים וזוויות ריסוס. ·         דגמים זמינים ¼\" ו- 1/8\" ו-EG ·         פלדת אל-חלד·         מגוון זוויות ריסוס",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "EG, Washjet",
+      "bulletPoints": []
+    },
+    {
+      "name": "דיזה טורבו (Turbo Nozzles)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1411632",
+      "id": "1411632",
+      "sku": "REX, iREX, MOSjet",
+      "images": [
+        "Cat_456349_443.webp",
+        "Cat_456349_313.jpg",
+        "Cat_456349_312.jpg"
+      ],
+      "previewImage": "Cat_456349_443.webp",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "דיזה טורבו עד 415 בר, מגביר את יעילות הניקיון לעומת ניקיון בדיזה מניפה שטוחה.",
+      "bulletPoints": [
+        "התקנה פשוטה",
+        "קיים במספר גדלים"
+      ]
+    },
+    {
+      "name": "פרזול (Fittings)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=2542991",
+      "id": "2542991",
+      "sku": "VER",
+      "images": [
+        "Cat_456349_444.webp",
+        "Cat_456349_311.jpg",
+        "Cat_456349_310.jpg",
+        "Cat_456349_444.webp",
+        "Cat_456349_310.jpg",
+        "Cat_456349_311.jpg"
+      ],
+      "previewImage": "Cat_456349_444.webp",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "יישומים שונים דורשים סוגי פרזול שונים. דיוק פרזול כללי להתאמת היישום שלך. ·         פליז, טבעת ניקל או פלדת אל חלד ·         מגוון תצורות תבריג·          דיוק גבוה",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "VER",
+      "bulletPoints": []
+    },
+    {
+      "name": "מחברים (Quick Connection)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=2807134",
+      "id": "2807134",
+      "sku": "QVS",
+      "images": [
+        "Cat_456349_425.jpg",
+        "Cat_456349_427.jpg",
+        "Cat_456349_426.jpg",
+        "Cat_456349_425.jpg",
+        "Cat_456349_426.jpg",
+        "Cat_456349_427.jpg"
+      ],
+      "previewImage": "Cat_456349_425.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "יישומים שונים דורשים סוגי פרזול שונים. דיוק פרזול כללי להתאמת היישום שלך. ·         פליז, טבעת ניקל או פלדת אל חלד ·         מגוון תצורות תבריג·          דיוק גבוה",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "VER",
+      "bulletPoints": []
+    },
+    {
+      "name": "מחברים (Quick Connection)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=2542992",
+      "id": "2542992",
+      "sku": "QVS",
+      "images": [
+        "Cat_456349_199.jpg",
+        "Cat_456349_309.jpg",
+        "Cat_456349_308.jpg",
+        "Cat_456349_199.jpg",
+        "Cat_456349_308.jpg",
+        "Cat_456349_309.jpg"
+      ],
+      "previewImage": "Cat_456349_199.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "יישומים שונים דורשים סוגי פרזול שונים. דיוק פרזול כללי להתאמת היישום שלך. ·         פליז, טבעת ניקל או פלדת אל חלד ·         מגוון תצורות תבריג·          דיוק גבוה",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "VER",
+      "bulletPoints": []
+    },
+    {
+      "name": "מפרקים (Toggle Joints)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=2542998",
+      "id": "2542998",
+      "sku": "KGK",
+      "images": [
+        "Cat_456349_428.webp",
+        "Cat_456349_307.jpg",
+        "Cat_456349_306.jpg"
+      ],
+      "previewImage": "Cat_456349_428.webp",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "VER",
+      "bulletPoints": [
+        "קל להתקנה.",
+        "קל אך קשיח.",
+        "עיצוב קומפקטי."
+      ]
+    },
+    {
+      "name": "חלקים (Accessories)",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1171093",
+      "id": "1171093",
+      "sku": "diverse",
+      "images": [
+        "Cat_456349_202.jpg",
+        "Cat_456349_305.jpg",
+        "Cat_456349_302.jpg",
+        "Cat_456349_202.jpg",
+        "Cat_456349_302.jpg",
+        "Cat_456349_303.jpg",
+        "Cat_456349_304.jpg",
+        "Cat_456349_305.jpg"
+      ],
+      "previewImage": "Cat_456349_202.jpg",
+      "categoryId": "LI_A_68312",
+      "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
+      "description": "יישומים שונים דורשים סוגי פרזול שונים. דיוק פרזול כללי להתאמת היישום שלך. ·         פליז, טבעת ניקל או פלדת אל חלד ·         מגוון תצורות תבריג·          דיוק גבוה",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "VER",
+      "bulletPoints": []
+    }
+  ],
+  "timestamp": "2025-05-25T22:10:17.294Z",
+  "category": "ציוד ניקוי מקצועי בלחץ מים",
+  "totalProducts": 32
+}

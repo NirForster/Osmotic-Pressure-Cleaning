@@ -1,0 +1,139 @@
+{
+  "success": true,
+  "data": [
+    {
+      "name": "ידית הארכה",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1910580",
+      "id": "1910580",
+      "sku": "",
+      "images": [
+        "Cat_456349_184.jpg",
+        "Cat_456349_185.jpg",
+        "Cat_456349_184.jpg",
+        "Cat_456349_185.jpg"
+      ],
+      "previewImage": "Cat_456349_184.jpg",
+      "categoryId": "LI_A_126371",
+      "categoryName": "R+M",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "",
+      "bulletPoints": []
+    },
+    {
+      "name": "דיזה טורבו 500 בר",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1910579",
+      "id": "1910579",
+      "sku": "",
+      "images": [
+        "Cat_456349_183.jpg"
+      ],
+      "previewImage": "Cat_456349_183.jpg",
+      "categoryId": "LI_A_126371",
+      "categoryName": "R+M",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "",
+      "bulletPoints": []
+    },
+    {
+      "name": "דיזה טורבו 1000 בר עד 90°C",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1910578",
+      "id": "1910578",
+      "sku": "",
+      "images": [
+        "Cat_456349_182.jpg"
+      ],
+      "previewImage": "Cat_456349_182.jpg",
+      "categoryId": "LI_A_126371",
+      "categoryName": "R+M",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "",
+      "bulletPoints": []
+    },
+    {
+      "name": "HP HOSE REEL AUTOMATIC",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1910577",
+      "id": "1910577",
+      "sku": "",
+      "images": [
+        "Cat_456349_181.jpg"
+      ],
+      "previewImage": "Cat_456349_181.jpg",
+      "categoryId": "LI_A_126371",
+      "categoryName": "R+M",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "",
+      "bulletPoints": []
+    },
+    {
+      "name": "76353230-g",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1910576",
+      "id": "1910576",
+      "sku": "",
+      "images": [
+        "Cat_456349_180.jpg"
+      ],
+      "previewImage": "Cat_456349_180.jpg",
+      "categoryId": "LI_A_126371",
+      "categoryName": "R+M",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "",
+      "bulletPoints": []
+    },
+    {
+      "name": "גלגלת צינור אוטומטי 15 מ '1/2",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1910575",
+      "id": "1910575",
+      "sku": "",
+      "images": [
+        "Cat_456349_179.jpg"
+      ],
+      "previewImage": "Cat_456349_179.jpg",
+      "categoryId": "LI_A_126371",
+      "categoryName": "R+M",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "",
+      "bulletPoints": []
+    },
+    {
+      "name": "עמדת היגיינה למניעת הדבקה בנגיף הקורונה",
+      "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1909273",
+      "id": "1909273",
+      "sku": "",
+      "images": [
+        "Cat_456349_173.jpg",
+        "Cat_456349_177.jpg",
+        "Cat_456349_174.jpg",
+        "Cat_456349_175.jpg",
+        "Cat_456349_176.jpg"
+      ],
+      "previewImage": "Cat_456349_173.jpg",
+      "categoryId": "LI_A_126371",
+      "categoryName": "R+M",
+      "description": "",
+      "pdfUrl": "",
+      "videoUrl": "",
+      "subHeader": "",
+      "bulletPoints": [
+        "העמדה מכילה מקום למסכות בד רב פעמיות.",
+        "מקום לחומר חיטוי היידים.",
+        "מקום לגליל נייר.",
+        "פח אשפה."
+      ]
+    }
+  ],
+  "timestamp": "2025-05-25T22:10:43.336Z",
+  "category": "R+M",
+  "totalProducts": 7
+}
