@@ -11,9 +11,7 @@
     "scrape:simple": "ts-node src/scrapers/simpleCategoryScraper.ts",
     "scrape:dev": "ts-node src/scrapers/extractCategories.ts",
     "scrape:products": "ts-node src/scrapers/extractProducts.ts",
-    "scrape:all-products": "ts-node src/scrapers/runProductScraper.ts",
-    "analyze:products": "ts-node src/scrapers/analyzeProducts.ts",
-    "analyze:missing-fields": "ts-node src/scrapers/analyzeMissingFields.ts"
+    "scrape:all-products": "ts-node src/scrapers/runProductScraper.ts"
   },
   "keywords": [],
   "author": "",
