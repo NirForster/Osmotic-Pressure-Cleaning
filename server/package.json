@@ -11,7 +11,9 @@
     "scrape:simple": "ts-node src/scrapers/simpleCategoryScraper.ts",
     "scrape:dev": "ts-node src/scrapers/extractCategories.ts",
     "scrape:products": "ts-node src/scrapers/extractProducts.ts",
-    "scrape:all-products": "ts-node src/scrapers/runProductScraper.ts"
+    "scrape:all-products": "ts-node src/scrapers/runProductScraper.ts",
+    "import:products": "ts-node src/scripts/importProducts.ts",
+    "update:image-urls": "ts-node src/scripts/updateProductsImageUrls.ts"
   },
   "keywords": [],
   "author": "",

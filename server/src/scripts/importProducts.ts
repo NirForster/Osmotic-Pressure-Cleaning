@@ -3,6 +3,8 @@ import * as path from "path";
 import { connectDB } from "../config/database";
 import { Product } from "../models/Product";
 
+const BASE_URL = "https://ben-gigi.co.il/";
+
 interface ProductData {
   name: string;
   url: string;
@@ -45,18 +47,37 @@ async function importProducts() {
       throw new Error("Invalid JSON data format");
     }
 
+    // Check for duplicate IDs in the JSON
+    const idSet = new Set();
+    const duplicateIds: string[] = [];
+    for (const product of jsonData.data) {
+      if (idSet.has(product.id)) {
+        duplicateIds.push(product.id);
+      } else {
+        idSet.add(product.id);
+      }
+    }
+    if (duplicateIds.length > 0) {
+      console.warn(`Duplicate IDs found in JSON:`, duplicateIds);
+    }
+
     // Clear existing products
     await Product.deleteMany({});
     console.log("Cleared existing products");
 
-    // Insert new products
+    // Insert new products with full image URLs
     const products = jsonData.data.map((product) => ({
       name: product.name,
       url: product.url,
       id: product.id,
       sku: product.sku,
-      images: product.images,
-      previewImage: product.previewImage,
+      images: (product.images || []).map((img) =>
+        img.startsWith("http") ? img : BASE_URL + img
+      ),
+      previewImage:
+        product.previewImage && !product.previewImage.startsWith("http")
+          ? BASE_URL + product.previewImage
+          : product.previewImage,
       categoryId: product.categoryId,
       categoryName: product.categoryName,
       description: product.description,
@@ -66,8 +87,25 @@ async function importProducts() {
       bulletPoints: product.bulletPoints || [],
     }));
 
-    await Product.insertMany(products);
-    console.log(`Successfully imported ${products.length} products`);
+    try {
+      await Product.insertMany(products, { ordered: false });
+      console.log(`Successfully imported ${products.length} products`);
+    } catch (insertErr: any) {
+      if (insertErr.writeErrors) {
+        console.error(`Insert errors (${insertErr.writeErrors.length}):`);
+        insertErr.writeErrors.forEach((err: any) => {
+          console.error(
+            `Error for product with id=${err.err.op.id}: ${err.errmsg}`
+          );
+        });
+        const successful = products.length - insertErr.writeErrors.length;
+        console.log(
+          `Successfully imported ${successful} products, ${insertErr.writeErrors.length} failed.`
+        );
+      } else {
+        console.error("Error inserting products:", insertErr);
+      }
+    }
 
     process.exit(0);
   } catch (error) {
