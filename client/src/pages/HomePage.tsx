@@ -7,8 +7,6 @@ import {
   Typography,
   Button,
   IconButton,
-  useTheme,
-  useMediaQuery,
   Fade,
 } from "@mui/material";
 import {
@@ -16,6 +14,9 @@ import {
   ArrowForwardIos,
   PlayArrow,
   Phone as PhoneIcon,
+  LocalCarWash,
+  PrecisionManufacturing,
+  CleaningServices,
 } from "@mui/icons-material";
 
 interface CarouselSlide {
@@ -23,7 +24,7 @@ interface CarouselSlide {
   title: string;
   subtitle: string;
   description: string;
-  image: string;
+  icon: React.ReactNode;
   ctaText: string;
   ctaAction: () => void;
   bgGradient: string;
@@ -33,8 +34,6 @@ const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const navigate = useNavigate();
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   // Carousel slides data
   const slides: CarouselSlide[] = [
@@ -43,40 +42,60 @@ const HomePage = () => {
       title: "ציוד ניקוי מקצועי",
       subtitle: "בלחץ מים גבוה",
       description: "מכונות שטיפה איכותיות לכל צורך - מביתי ועד תעשייתי",
-      image: "🚿", // Using emoji as placeholder, replace with actual images
+      icon: (
+        <LocalCarWash
+          color="inherit"
+          sx={{ fontSize: { xs: "8rem", md: "12rem", lg: "15rem" } }}
+        />
+      ),
       ctaText: "צפה במוצרים",
       ctaAction: () => navigate("/products"),
-      bgGradient: "linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%)",
+      bgGradient: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
     },
     {
       id: 2,
       title: "Mosmatic",
       subtitle: "איכות גרמנית מובילה",
       description: "אביזרים ורכיבים מקצועיים למכונות שטיפה בלחץ מים",
-      image: "⭐", // Replace with Mosmatic product image
+      icon: (
+        <PrecisionManufacturing
+          color="inherit"
+          sx={{ fontSize: { xs: "8rem", md: "12rem", lg: "15rem" } }}
+        />
+      ),
       ctaText: "מוצרי Mosmatic",
       ctaAction: () => navigate("/products/rm-brand"),
-      bgGradient: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)",
+      bgGradient: "linear-gradient(135deg, #1e293b 0%, #334155 100%)",
     },
     {
       id: 3,
       title: "שואבי אבק מקצועיים",
       subtitle: "לכל סוג פסולת",
       description: "שואבי אבק תעשייתיים לניקוי יעיל ומהיר",
-      image: "🌪️", // Replace with vacuum cleaner image
+      icon: (
+        <CleaningServices
+          color="inherit"
+          sx={{ fontSize: { xs: "8rem", md: "12rem", lg: "15rem" } }}
+        />
+      ),
       ctaText: "שואבי אבק",
       ctaAction: () => navigate("/products/vacuum-cleaners"),
-      bgGradient: "linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)",
+      bgGradient: "linear-gradient(135deg, #0f172a 0%, #334155 100%)",
     },
     {
       id: 4,
       title: "ייעוץ מקצועי",
       subtitle: "שירות אישי",
       description: "צוות המומחים שלנו כאן לעזור לכם למצוא את הפתרון המושלם",
-      image: "📞", // Replace with consultation/service image
+      icon: (
+        <PhoneIcon
+          color="inherit"
+          sx={{ fontSize: { xs: "8rem", md: "12rem", lg: "15rem" } }}
+        />
+      ),
       ctaText: "צור קשר",
       ctaAction: () => window.open("tel:+972501234567"),
-      bgGradient: "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)",
+      bgGradient: "linear-gradient(135deg, #111827 0%, #1e293b 100%)",
     },
   ];
 
@@ -112,11 +131,37 @@ const HomePage = () => {
 
   return (
     <Box>
+      {/* Hero Video Section */}
+      <Box
+        sx={{
+          width: "100%",
+          height: "calc(100vh - 75px)",
+          overflow: "hidden",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          background: "#000",
+        }}
+      >
+        <video
+          src="https://www.mosmatic.com/videos/Home_EN.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+          }}
+        />
+      </Box>
+
       {/* Hero Carousel */}
       <Box
         sx={{
           position: "relative",
-          height: { xs: "70vh", md: "80vh" },
+          height: { xs: "90vh", md: "80vh" },
           overflow: "hidden",
           background: slides[currentSlide].bgGradient,
         }}
@@ -227,19 +272,18 @@ const HomePage = () => {
               </Box>
             </Fade>
 
-            {/* Image/Icon */}
-            <Fade in={true} timeout={1000} key={`image-${currentSlide}`}>
+            {/* Icon */}
+            <Fade in={true} timeout={1000} key={`icon-${currentSlide}`}>
               <Box
                 sx={{
-                  display: "flex",
+                  display: { xs: "none", md: "flex" },
                   justifyContent: "center",
                   alignItems: "center",
-                  fontSize: { xs: "8rem", md: "12rem", lg: "15rem" },
                   filter: "drop-shadow(0 8px 24px rgba(0,0,0,0.3))",
-                  order: { xs: -1, md: 1 },
+                  color: "white",
                 }}
               >
-                {slides[currentSlide].image}
+                {slides[currentSlide].icon}
               </Box>
             </Fade>
           </Box>
@@ -487,7 +531,9 @@ const HomePage = () => {
                 >
                   INTERPUMP
                 </Box>
-                .
+                . החברה עוסקת בארבעה תחומים עיקריים: מוצרי ניקיון בלחץ מים,
+                אביזרים לשטיפת רכב, מכונות שטיפה בלחץ מים חמים או קרים, ומחברים
+                סיבובים.
               </Typography>
             </Box>
 
