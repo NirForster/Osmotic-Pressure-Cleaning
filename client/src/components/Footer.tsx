@@ -1,16 +1,7 @@
 // components/Footer.tsx
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Box,
-  Container,
-  Grid,
-  Typography,
-  IconButton,
-  Divider,
-  useTheme,
-  useMediaQuery,
-} from "@mui/material";
+import { Box, Container, Typography, IconButton, Divider } from "@mui/material";
 import {
   Phone as PhoneIcon,
   Email as EmailIcon,
@@ -18,7 +9,6 @@ import {
   WhatsApp as WhatsAppIcon,
   Facebook as FacebookIcon,
   Instagram as InstagramIcon,
-  Water,
   Home as HomeIcon,
   Inventory as ProductsIcon,
   Article as ArticleIcon,
@@ -26,9 +16,6 @@ import {
 import { productCategories } from "../Router";
 
 const Footer = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-
   const quickLinks = [
     { path: "/", name: "בית", icon: <HomeIcon /> },
     { path: "/products", name: "מוצרים", icon: <ProductsIcon /> },
@@ -99,114 +86,121 @@ const Footer = () => {
       <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
         {/* Main Footer Content */}
         <Box sx={{ py: { xs: 4, md: 6 } }}>
-          <Grid container spacing={{ xs: 3, md: 4 }}>
+          <Box
+            sx={{
+              display: "grid",
+              gridTemplateColumns: {
+                xs: "1fr",
+                md: "repeat(3, 1fr)",
+              },
+              gap: { xs: 3, md: 4 },
+            }}
+          >
             {/* Company Info */}
-            <Grid item xs={12} md={4}>
-              <Box sx={{ mb: 3 }}>
+            <Box>
+              <Box
+                sx={{ display: "flex", alignItems: "center", gap: 2, mb: 2 }}
+              >
+                {/* Ben Gigi Logo */}
                 <Box
-                  sx={{ display: "flex", alignItems: "center", gap: 2, mb: 2 }}
-                >
-                  {/* Ben Gigi Logo */}
-                  <Box
-                    sx={{
-                      width: 50,
-                      height: 50,
-                      borderRadius: "50%",
-                      overflow: "hidden",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      backgroundColor: "rgba(255, 255, 255, 0.1)",
-                      border: "2px solid rgba(255, 255, 255, 0.2)",
-                    }}
-                  >
-                    <img
-                      src="/waterLoaderSvg.svg"
-                      alt="Ben Gigi Logo"
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                      }}
-                    />
-                  </Box>
-
-                  {/* Company Name */}
-                  <Typography
-                    variant="h5"
-                    sx={{
-                      fontWeight: "bold",
-                      background:
-                        "linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%)",
-                      backgroundClip: "text",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                    }}
-                  >
-                    Ben Gigi
-                  </Typography>
-
-                  {/* Mosmatic Logo */}
-                  <Box
-                    sx={{
-                      height: 36,
-                      width: "auto",
-                      ml: 1,
-                      display: "flex",
-                      alignItems: "center",
-                    }}
-                  >
-                    <img
-                      src="/src/assets/osmotics logo.png"
-                      alt="Mosmatic"
-                      style={{
-                        height: "100%",
-                        width: "auto",
-                        objectFit: "contain",
-                        filter: "brightness(0) invert(1)", // Makes the logo white for dark background
-                      }}
-                    />
-                  </Box>
-                </Box>
-                <Typography
-                  variant="body1"
                   sx={{
-                    color: "rgba(255, 255, 255, 0.8)",
-                    lineHeight: 1.6,
-                    mb: 3,
+                    width: 50,
+                    height: 50,
+                    borderRadius: "50%",
+                    overflow: "hidden",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    backgroundColor: "rgba(255, 255, 255, 0.1)",
+                    border: "2px solid rgba(255, 255, 255, 0.2)",
                   }}
                 >
-                  מובילים בתחום ציוד ניקוי בלחץ מים. איכות, מקצועיות ושירות
-                  מעולה כבר למעלה מ-15 שנה.
+                  <img
+                    src="/waterLoaderSvg.svg"
+                    alt="Ben Gigi Logo"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                </Box>
+
+                {/* Company Name */}
+                <Typography
+                  variant="h5"
+                  sx={{
+                    fontWeight: "bold",
+                    background:
+                      "linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%)",
+                    backgroundClip: "text",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  Ben Gigi
                 </Typography>
 
-                {/* Social Media */}
-                <Box sx={{ display: "flex", gap: 1 }}>
-                  {socialLinks.map((social, index) => (
-                    <IconButton
-                      key={index}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      sx={{
-                        backgroundColor: "rgba(255, 255, 255, 0.1)",
-                        color: "white",
-                        "&:hover": {
-                          backgroundColor: social.color,
-                          transform: "translateY(-2px)",
-                        },
-                        transition: "all 0.3s ease",
-                      }}
-                    >
-                      {social.icon}
-                    </IconButton>
-                  ))}
+                {/* Mosmatic Logo */}
+                <Box
+                  sx={{
+                    height: 36,
+                    width: "auto",
+                    ml: 1,
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <img
+                    src="/src/assets/osmotics logo.png"
+                    alt="Mosmatic"
+                    style={{
+                      height: "100%",
+                      width: "auto",
+                      objectFit: "contain",
+                      filter: "brightness(0) invert(1)", // Makes the logo white for dark background
+                    }}
+                  />
                 </Box>
               </Box>
-            </Grid>
+              <Typography
+                variant="body1"
+                sx={{
+                  color: "rgba(255, 255, 255, 0.8)",
+                  lineHeight: 1.6,
+                  mb: 3,
+                }}
+              >
+                מובילים בתחום ציוד ניקוי בלחץ מים. איכות, מקצועיות ושירות מעולה
+                כבר למעלה מ-15 שנה.
+              </Typography>
+
+              {/* Social Media */}
+              <Box sx={{ display: "flex", gap: 1 }}>
+                {socialLinks.map((social, index) => (
+                  <IconButton
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      backgroundColor: "rgba(255, 255, 255, 0.1)",
+                      color: "white",
+                      "&:hover": {
+                        backgroundColor: social.color,
+                        transform: "translateY(-2px)",
+                      },
+                      transition: "all 0.3s ease",
+                    }}
+                  >
+                    {social.icon}
+                  </IconButton>
+                ))}
+              </Box>
+            </Box>
 
             {/* Quick Links */}
-            <Grid item xs={12} sm={6} md={2}>
+            <Box>
               <Typography
                 variant="h6"
                 sx={{
@@ -242,10 +236,10 @@ const Footer = () => {
                   </Box>
                 ))}
               </Box>
-            </Grid>
+            </Box>
 
             {/* Product Categories */}
-            <Grid item xs={12} sm={6} md={3}>
+            <Box>
               <Typography
                 variant="h6"
                 sx={{
@@ -283,10 +277,10 @@ const Footer = () => {
                   </Box>
                 ))}
               </Box>
-            </Grid>
+            </Box>
 
             {/* Contact Info */}
-            <Grid item xs={12} md={3}>
+            <Box>
               <Typography
                 variant="h6"
                 sx={{
@@ -365,8 +359,8 @@ const Footer = () => {
                 <WhatsAppIcon sx={{ fontSize: 20 }} />
                 שלח הודעה
               </Box>
-            </Grid>
-          </Grid>
+            </Box>
+          </Box>
         </Box>
 
         {/* Bottom Footer */}

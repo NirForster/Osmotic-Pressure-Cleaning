@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import {
   Container,
   Typography,
-  Grid,
   Card,
   CardContent,
   CardMedia,
@@ -12,7 +11,6 @@ import {
   TextField,
   InputAdornment,
   Pagination,
-  Skeleton,
 } from "@mui/material";
 import { Search as SearchIcon } from "@mui/icons-material";
 
@@ -215,7 +213,10 @@ const ProductCategory: React.FC<ProductCategoryProps> = ({ category }) => {
   };
 
   return (
-    <Container maxWidth="lg" sx={{ py: { xs: 2, md: 4 } }}>
+    <Container
+      maxWidth="xl"
+      sx={{ py: { xs: 2, md: 4 }, px: { xs: 2, md: 3 } }}
+    >
       {/* Category Header */}
       <Box sx={{ mb: 4, textAlign: "center" }}>
         <Box sx={{ fontSize: "3rem", mb: 2 }}>{category.icon}</Box>
@@ -268,58 +269,74 @@ const ProductCategory: React.FC<ProductCategoryProps> = ({ category }) => {
 
       {/* Products Grid */}
       {loading ? (
-        <Grid container spacing={3}>
-          {Array.from({ length: 9 }).map((_, index) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
-              <Card sx={{ height: 350 }}>
-                <Skeleton variant="rectangular" height={200} />
-                <CardContent>
-                  <Skeleton variant="text" height={32} />
-                  <Skeleton variant="text" height={20} />
-                  <Skeleton variant="text" height={20} />
-                  <Skeleton variant="text" height={28} width="40%" />
-                </CardContent>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: {
+              xs: "1fr",
+              sm: "repeat(2, 1fr)",
+              md: "repeat(3, 1fr)",
+              lg: "repeat(3, 1fr)",
+              xl: "repeat(3, 1fr)",
+            },
+            gap: 3,
+            maxWidth: "1200px",
+            mx: "auto",
+            minHeight: 400,
+          }}
+        >
+          {/* You can place your loader here or keep it centered if you wish */}
+        </Box>
       ) : (
-        <>
-          <Grid container spacing={3}>
-            {currentProducts.map((product) => (
-              <Grid item xs={12} sm={6} md={4} key={product.id}>
-                <ProductCard product={product} />
-              </Grid>
-            ))}
-          </Grid>
-
-          {/* Pagination */}
-          {totalPages > 1 && (
-            <Box sx={{ display: "flex", justifyContent: "center", mt: 4 }}>
-              <Pagination
-                count={totalPages}
-                page={currentPage}
-                onChange={handlePageChange}
-                color="primary"
-                size="large"
-                sx={{
-                  "& .MuiPaginationItem-root": {
-                    borderRadius: 2,
-                  },
-                }}
-              />
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: {
+              xs: "1fr",
+              sm: "repeat(2, 1fr)",
+              md: "repeat(3, 1fr)",
+              lg: "repeat(3, 1fr)",
+              xl: "repeat(3, 1fr)",
+            },
+            gap: 3,
+            maxWidth: "1400px",
+            mx: "auto",
+            justifyItems: "center",
+          }}
+        >
+          {currentProducts.map((product) => (
+            <Box key={product.id} sx={{ width: "100%" }}>
+              <ProductCard product={product} />
             </Box>
-          )}
+          ))}
+        </Box>
+      )}
 
-          {/* No Results */}
-          {filteredProducts.length === 0 && !loading && (
-            <Box sx={{ textAlign: "center", py: 8 }}>
-              <Typography variant="h6" color="text.secondary">
-                לא נמצאו מוצרים התואמים לחיפוש
-              </Typography>
-            </Box>
-          )}
-        </>
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <Box sx={{ display: "flex", justifyContent: "center", mt: 4 }}>
+          <Pagination
+            count={totalPages}
+            page={currentPage}
+            onChange={handlePageChange}
+            color="primary"
+            size="large"
+            sx={{
+              "& .MuiPaginationItem-root": {
+                borderRadius: 2,
+              },
+            }}
+          />
+        </Box>
+      )}
+
+      {/* No Results */}
+      {filteredProducts.length === 0 && !loading && (
+        <Box sx={{ textAlign: "center", py: 8 }}>
+          <Typography variant="h6" color="text.secondary">
+            לא נמצאו מוצרים התואמים לחיפוש
+          </Typography>
+        </Box>
       )}
     </Container>
   );

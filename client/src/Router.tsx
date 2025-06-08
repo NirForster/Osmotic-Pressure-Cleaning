@@ -1,8 +1,9 @@
 // Router.tsx
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import ProductsPage from "./pages/ProductsPage";
 import Articles from "./pages/Articles";
+import CategoryPage from "./pages/CategoryPage";
+import ProductPage from "./pages/ProductPage";
 
 // Simple product categories - no complex imports
 export const productCategories = [
@@ -54,58 +55,9 @@ const AppRouter = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/products" element={<ProductsPage />} />
       <Route path="/articles" element={<Articles />} />
-
-      {/* Simple category routes for now */}
-      <Route
-        path="/products/accessories"
-        element={
-          <div style={{ padding: "20px", textAlign: "center" }}>
-            אביזרים לשטיפת רכב - בקרוב
-          </div>
-        }
-      />
-      <Route
-        path="/products/swivel-connectors"
-        element={
-          <div style={{ padding: "20px", textAlign: "center" }}>
-            מחבר סיבובי סביבל - בקרוב
-          </div>
-        }
-      />
-      <Route
-        path="/products/pressure-washers"
-        element={
-          <div style={{ padding: "20px", textAlign: "center" }}>
-            מכונות שטיפה בלחץ מים - בקרוב
-          </div>
-        }
-      />
-      <Route
-        path="/products/professional-equipment"
-        element={
-          <div style={{ padding: "20px", textAlign: "center" }}>
-            ציוד ניקוי מקצועי - בקרוב
-          </div>
-        }
-      />
-      <Route
-        path="/products/vacuum-cleaners"
-        element={
-          <div style={{ padding: "20px", textAlign: "center" }}>
-            שואבי אבק - בקרוב
-          </div>
-        }
-      />
-      <Route
-        path="/products/rm-brand"
-        element={
-          <div style={{ padding: "20px", textAlign: "center" }}>
-            R+M - בקרוב
-          </div>
-        }
-      />
+      <Route path="/products/:categoryPath" element={<CategoryPage />} />
+      <Route path="/product/:id" element={<ProductPage />} />
     </Routes>
   );
 };
