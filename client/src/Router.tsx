@@ -17,7 +17,7 @@ export const productCategories = [
   {
     id: "swivel-connectors",
     path: "swivel-connectors",
-    name: "מחבר סיבובי סביבל",
+    name: "מחבר סיבובי - סביבל",
     icon: "🔄",
     description: "מחברים סיבוביים מקצועיים למכונות שטיפה",
   },

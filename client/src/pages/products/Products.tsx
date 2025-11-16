@@ -208,7 +208,7 @@ const ProductsPage = () => {
               variant="body2"
               sx={{ fontWeight: 600, color: "#475569" }}
             >
-              📞 050-123-4567
+              📞 0506362755
             </Typography>
           </Box>
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>

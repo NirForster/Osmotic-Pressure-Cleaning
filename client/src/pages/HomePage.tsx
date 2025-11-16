@@ -94,7 +94,7 @@ const HomePage = () => {
         />
       ),
       ctaText: "צור קשר",
-      ctaAction: () => window.open("tel:+972501234567"),
+      ctaAction: () => window.open("tel:+972506362755"),
       bgGradient: "linear-gradient(135deg, #111827 0%, #1e293b 100%)",
     },
   ];
@@ -854,7 +854,7 @@ const HomePage = () => {
               variant="contained"
               size="large"
               startIcon={<PhoneIcon />}
-              href="tel:+972501234567"
+              href="tel:+972506362755"
               sx={{
                 backgroundColor: "#0ea5e9",
                 px: 4,
@@ -872,7 +872,7 @@ const HomePage = () => {
                 transition: "all 0.3s ease",
               }}
             >
-              חייגו עכשיו: 050-123-4567
+              חייגו עכשיו: 0506362755
             </Button>
           </Box>
         </Container>

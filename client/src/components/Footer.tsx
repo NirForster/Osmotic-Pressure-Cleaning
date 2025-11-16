@@ -9,6 +9,8 @@ import {
   WhatsApp as WhatsAppIcon,
   Facebook as FacebookIcon,
   Instagram as InstagramIcon,
+  YouTube as YouTubeIcon,
+  MusicNote as TikTokIcon,
   Home as HomeIcon,
   Inventory as ProductsIcon,
   Article as ArticleIcon,
@@ -25,8 +27,8 @@ const Footer = () => {
   const contactInfo = [
     {
       icon: <PhoneIcon />,
-      text: "050-123-4567",
-      href: "tel:+972501234567",
+      text: "0506362755",
+      href: "tel:+972506362755",
     },
     {
       icon: <EmailIcon />,
@@ -43,18 +45,28 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <WhatsAppIcon />,
-      href: "https://wa.me/972501234567",
+      href: "https://wa.me/972506362755",
       color: "#25D366",
     },
     {
-      icon: <FacebookIcon />,
-      href: "https://facebook.com",
-      color: "#1877F2",
+      icon: <TikTokIcon />,
+      href: "https://www.tiktok.com/@ben.gigi.ltd",
+      color: "#000000",
     },
     {
       icon: <InstagramIcon />,
-      href: "https://instagram.com",
+      href: "https://www.instagram.com/ben_gigi_ltd/",
       color: "#E4405F",
+    },
+    {
+      icon: <YouTubeIcon />,
+      href: "https://www.youtube.com/channel/UC2Z561ujJDRKGTqK9VrdRmw/featured",
+      color: "#FF0000",
+    },
+    {
+      icon: <FacebookIcon />,
+      href: "https://www.facebook.com/mosmatic.israel/?fref=ts",
+      color: "#1877F2",
     },
   ];
 
@@ -332,7 +344,7 @@ const Footer = () => {
               {/* WhatsApp Button */}
               <Box
                 component="a"
-                href="https://wa.me/972501234567"
+                href="https://wa.me/972506362755"
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{

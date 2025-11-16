@@ -228,7 +228,7 @@ const Navbar = () => {
         <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1 }}>
           <PhoneIcon sx={{ fontSize: 18, color: "#6b7280" }} />
           <Typography variant="body2" sx={{ color: "#6b7280" }}>
-            050-123-4567
+            0506362755
           </Typography>
         </Box>
         <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 3 }}>

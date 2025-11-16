@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {
   Container,
@@ -8,7 +8,7 @@ import {
   Card,
   CardContent,
 } from "@mui/material";
-import Carousel from "react-material-ui-carousel";
+import ImageCarousel from "../components/ImageCarousel";
 import api from "../services/api";
 import type { Product } from "../services/api";
 
@@ -17,15 +17,17 @@ const ProductPage = () => {
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [failedImages, setFailedImages] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     const fetchProduct = async () => {
       try {
         setLoading(true);
+        setFailedImages(new Set()); // Reset failed images when product changes
         const response = await api.getProductById(id!);
         setProduct(response.data);
         setError(null);
-      } catch (err) {
+      } catch {
         setError("Failed to load product");
         setProduct(null);
       } finally {
@@ -58,45 +60,82 @@ const ProductPage = () => {
     );
   }
 
-  // Prepare images for carousel: use only the images array, deduplicated
-  const images = Array.from(new Set(product.images || []));
-  console.log(
-    "Product images for carousel:",
-    images,
-    "Original images array:",
-    product.images
-  );
+  // Prepare images for carousel: filter, deduplicate, and validate
+  const BASE_URL = "https://ben-gigi.co.il/";
+
+  const prepareImages = () => {
+    // Helper function to normalize image URLs (prepend base URL if relative)
+    const normalizeImageUrl = (img: string): string => {
+      if (!img || typeof img !== "string" || img.trim() === "") {
+        return "";
+      }
+      const trimmed = img.trim();
+      // If already a full URL, return as is
+      if (trimmed.startsWith("http://") || trimmed.startsWith("https://")) {
+        return trimmed;
+      }
+      // Otherwise, prepend base URL
+      return BASE_URL + trimmed;
+    };
+
+    // Start with the images array - this is the source of truth
+    let filteredImages = (product.images || [])
+      .map(normalizeImageUrl)
+      .filter((img) => img !== "");
+
+    // Deduplicate using Set to remove exact duplicates
+    filteredImages = Array.from(new Set(filteredImages));
+
+    // Only use previewImage as fallback if images array is empty
+    if (filteredImages.length === 0 && product.previewImage) {
+      const normalizedPreview = normalizeImageUrl(product.previewImage);
+      if (normalizedPreview) {
+        filteredImages = [normalizedPreview];
+      }
+    }
+
+    return filteredImages;
+  };
+
+  const images = prepareImages();
+  const validImages = images.filter((img) => !failedImages.has(img));
+
+  // Debug logging
+  console.log("Product images:", {
+    original: product.images,
+    prepared: images,
+    valid: validImages,
+    failed: Array.from(failedImages),
+  });
 
   return (
     <Container maxWidth="md" sx={{ py: { xs: 3, md: 6 } }}>
       <Card sx={{ mb: 4 }}>
-        <Carousel
-          autoPlay
-          interval={3500}
-          animation="slide"
-          navButtonsAlwaysVisible
-          indicators={images.length > 1}
-        >
-          {images.map((img, idx) => (
-            <Box
-              key={idx}
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-              sx={{ height: 350, background: "#f8fafc" }}
-            >
-              <img
-                src={img}
-                alt={product.name}
-                style={{
-                  maxHeight: 320,
-                  maxWidth: "100%",
-                  objectFit: "contain",
-                }}
-              />
-            </Box>
-          ))}
-        </Carousel>
+        {validImages.length > 0 ? (
+          <ImageCarousel
+            images={validImages}
+            alt={product.name}
+            height={350}
+            autoPlay={false}
+            autoPlayInterval={3500}
+            onImageError={(img) => {
+              setFailedImages((prev) => new Set(prev).add(img));
+            }}
+          />
+        ) : (
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            sx={{
+              height: 350,
+              background: "#f8fafc",
+              color: "#64748b",
+            }}
+          >
+            <Typography variant="body1">אין תמונות זמינות למוצר זה</Typography>
+          </Box>
+        )}
         <CardContent>
           <Typography variant="h4" fontWeight={700} gutterBottom>
             {product.name}
