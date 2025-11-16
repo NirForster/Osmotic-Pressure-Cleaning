@@ -1,5 +1,4 @@
 // components/Footer.tsx
-import React from "react";
 import { Link } from "react-router-dom";
 import { Box, Container, Typography, IconButton, Divider } from "@mui/material";
 import {

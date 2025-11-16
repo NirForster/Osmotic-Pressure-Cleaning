@@ -8,10 +8,15 @@ import productRoutes from "./routes/productRoutes";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = parseInt(process.env.PORT || "3000", 10);
 
 // Middleware
-app.use(cors());
+// CORS configuration - allow requests from client URL in production
+const corsOptions = {
+  origin: process.env.CLIENT_URL || "*", // Allow all origins in dev, specific URL in production
+  credentials: true,
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Routes
@@ -42,11 +47,12 @@ app.use(
 async function startServer() {
   try {
     await connectDB();
-    app.listen(PORT, () => {
+    app.listen(PORT, "0.0.0.0", () => {
       console.log(`Server is running on port ${PORT}`);
     });
   } catch (error) {
-    console.error("Failed to start server:", error);
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    console.error("Failed to start server:", errorMessage);
     process.exit(1);
   }
 }

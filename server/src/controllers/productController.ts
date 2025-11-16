@@ -43,6 +43,7 @@ export const productController = {
         },
       });
     } catch (error) {
+      console.error("Error fetching products:", error);
       res.status(500).json({
         success: false,
         error: "Failed to fetch products",
@@ -65,6 +66,7 @@ export const productController = {
         data: product,
       });
     } catch (error) {
+      console.error("Error fetching product:", error);
       res.status(500).json({
         success: false,
         error: "Failed to fetch product",
@@ -81,6 +83,7 @@ export const productController = {
         data: categories.sort(),
       });
     } catch (error) {
+      console.error("Error fetching categories:", error);
       res.status(500).json({
         success: false,
         error: "Failed to fetch categories",

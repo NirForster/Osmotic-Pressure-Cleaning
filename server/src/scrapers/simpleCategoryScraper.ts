@@ -59,7 +59,8 @@ async function extractCategories() {
         console.log("✅ Page loaded successfully!");
         break;
       } catch (error) {
-        console.log(`❌ Failed to load ${url}: ${error.message}`);
+        const errorMessage = error instanceof Error ? error.message : String(error);
+        console.log(`❌ Failed to load ${url}: ${errorMessage}`);
         continue;
       }
     }
@@ -254,7 +255,8 @@ async function extractCategories() {
 
     return categories;
   } catch (error) {
-    console.error("❌ Error during scraping:", error);
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    console.error("❌ Error during scraping:", errorMessage);
     throw error;
   } finally {
     await browser.close();

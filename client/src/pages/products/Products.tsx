@@ -1,5 +1,4 @@
 // pages/ProductsPage.tsx
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Container,
@@ -9,15 +8,11 @@ import {
   CardContent,
   Box,
   Paper,
-  useTheme,
-  useMediaQuery,
 } from "@mui/material";
-import { productCategories } from "../Router";
+import { productCategories } from "../../Router";
 
 const ProductsPage = () => {
   const navigate = useNavigate();
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <Container maxWidth="lg" sx={{ py: { xs: 3, md: 6 } }}>
@@ -53,9 +48,16 @@ const ProductsPage = () => {
       </Box>
 
       {/* Categories Grid */}
-      <Grid container spacing={{ xs: 2, md: 3 }}>
-        {productCategories.map((category, index) => (
-          <Grid item xs={12} sm={6} md={4} key={category.id}>
+      <Grid container columns={12} spacing={{ xs: 2, md: 3 }}>
+        {productCategories.map((category: typeof productCategories[0], index: number) => (
+          <Grid
+            key={category.id}
+            columns={12}
+            sx={{
+              width: { xs: "100%", sm: "50%", md: "33.33%" },
+              display: "flex",
+            }}
+          >
             <Card
               sx={{
                 height: { xs: 200, md: 240 },

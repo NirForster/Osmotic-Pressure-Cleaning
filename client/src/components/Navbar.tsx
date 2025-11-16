@@ -15,7 +15,6 @@ import {
   useTheme,
   useMediaQuery,
   Collapse,
-  Divider,
 } from "@mui/material";
 import {
   Menu as MenuIcon,
@@ -25,7 +24,6 @@ import {
   Article as ArticleIcon,
   ExpandLess,
   ExpandMore,
-  Water,
   Phone as PhoneIcon,
   Email as EmailIcon,
 } from "@mui/icons-material";
