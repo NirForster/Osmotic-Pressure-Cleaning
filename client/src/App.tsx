@@ -3,7 +3,6 @@ import { CssBaseline, Box } from "@mui/material";
 import { create } from "jss";
 import rtl from "jss-rtl";
 import { StylesProvider, jssPreset } from "@mui/styles";
-import { HelmetProvider } from "react-helmet-async";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -145,7 +144,6 @@ const theme = createTheme({
 
 function App() {
   return (
-    <HelmetProvider>
       <StylesProvider jss={jss}>
         <ThemeProvider theme={theme}>
           <CssBaseline />
@@ -164,7 +162,6 @@ function App() {
           </Box>
         </ThemeProvider>
       </StylesProvider>
-    </HelmetProvider>
   );
 }
 
