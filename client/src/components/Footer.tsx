@@ -82,7 +82,7 @@ const Footer = () => {
         overflow: "hidden",
       }}
     >
-      {/* Background Pattern */}
+      {/* Background Pattern - Modern Mesh Gradient Overlay */}
       <Box
         sx={{
           position: "absolute",
@@ -90,8 +90,24 @@ const Footer = () => {
           left: 0,
           right: 0,
           bottom: 0,
-          opacity: 0.05,
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          background: `radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.15) 0%, transparent 50%),
+                       radial-gradient(circle at 80% 80%, rgba(2, 132, 199, 0.15) 0%, transparent 50%),
+                       radial-gradient(circle at 40% 20%, rgba(8, 145, 178, 0.1) 0%, transparent 50%)`,
+          opacity: 0.8,
+        }}
+      />
+      {/* Subtle Grid Pattern */}
+      <Box
+        sx={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          opacity: 0.03,
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)`,
+          backgroundSize: "50px 50px",
         }}
       />
 

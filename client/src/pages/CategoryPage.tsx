@@ -3,7 +3,6 @@ import { useParams, useNavigate } from "react-router-dom";
 import {
   Container,
   Typography,
-  Grid,
   Card,
   CardContent,
   CardMedia,
@@ -102,74 +101,76 @@ const CategoryPage = () => {
         </Typography>
       </Box>
 
-      {/* Products Grid (MUI v6+ syntax) */}
-      <Grid container columns={12} columnSpacing={3} rowSpacing={3}>
+      {/* Products Grid */}
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: {
+            xs: "1fr",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(3, 1fr)",
+          },
+          gap: 2,
+        }}
+      >
         {products.map((product) => (
-          <Grid
+          <Card
             key={product.id}
-            columns={12}
             sx={{
-              width: { xs: "100%", sm: "50%", md: "33.33%" },
+              width: "100%",
+              height: "100%",
               display: "flex",
+              flexDirection: "column",
+              transition: "transform 0.2s",
+              cursor: "pointer",
+              "&:hover": {
+                transform: "translateY(-4px)",
+              },
             }}
+            onClick={() => navigate(`/product/${product.id}`)}
           >
-            <Card
-              sx={{
-                width: "100%",
-                height: "100%",
-                display: "flex",
-                flexDirection: "column",
-                transition: "transform 0.2s",
-                cursor: "pointer",
-                "&:hover": {
-                  transform: "translateY(-4px)",
-                },
-              }}
-              onClick={() => navigate(`/product/${product.id}`)}
-            >
-              <CardMedia
-                component="img"
-                height="200"
-                image={product.previewImage}
-                alt={product.name}
-                sx={{ objectFit: "contain", p: 2 }}
-              />
-              <CardContent sx={{ flexGrow: 1 }}>
+            <CardMedia
+              component="img"
+              height="200"
+              image={product.previewImage}
+              alt={product.name}
+              sx={{ objectFit: "contain", p: 2 }}
+            />
+            <CardContent sx={{ flexGrow: 1 }}>
+              <Typography
+                gutterBottom
+                variant="h6"
+                component="h2"
+                sx={{
+                  fontWeight: 600,
+                  fontSize: { xs: "1rem", md: "1.1rem" },
+                }}
+              >
+                {product.name}
+              </Typography>
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                sx={{
+                  mb: 2,
+                  fontSize: { xs: "0.875rem", md: "1rem" },
+                }}
+              >
+                {product.description}
+              </Typography>
+              {product.sku && (
                 <Typography
-                  gutterBottom
-                  variant="h6"
-                  component="h2"
-                  sx={{
-                    fontWeight: 600,
-                    fontSize: { xs: "1rem", md: "1.1rem" },
-                  }}
-                >
-                  {product.name}
-                </Typography>
-                <Typography
-                  variant="body2"
+                  variant="caption"
                   color="text.secondary"
-                  sx={{
-                    mb: 2,
-                    fontSize: { xs: "0.875rem", md: "1rem" },
-                  }}
+                  sx={{ display: "block" }}
                 >
-                  {product.description}
+                  SKU: {product.sku}
                 </Typography>
-                {product.sku && (
-                  <Typography
-                    variant="caption"
-                    color="text.secondary"
-                    sx={{ display: "block" }}
-                  >
-                    SKU: {product.sku}
-                  </Typography>
-                )}
-              </CardContent>
-            </Card>
-          </Grid>
+              )}
+            </CardContent>
+          </Card>
         ))}
-      </Grid>
+      </Box>
     </Container>
   );
 };
