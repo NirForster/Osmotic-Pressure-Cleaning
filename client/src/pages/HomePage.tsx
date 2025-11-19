@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { getAssetUrl } from "../config/cloudinaryAssets";
+import SEO from "../components/SEO";
 import {
   Box,
   Container,
@@ -132,6 +133,7 @@ const HomePage = () => {
 
   return (
     <Box>
+      <SEO />
       {/* Hero Video Section */}
       <Box
         sx={{

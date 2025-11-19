@@ -11,6 +11,7 @@ import {
 import ImageCarousel from "../components/ImageCarousel";
 import api from "../services/api";
 import type { Product } from "../services/api";
+import SEO from "../components/SEO";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -110,6 +111,14 @@ const ProductPage = () => {
 
   return (
     <Container maxWidth="md" sx={{ py: { xs: 3, md: 6 } }}>
+      <SEO
+        title={product ? `${product.name} | Ben Gigi` : "Product | Ben Gigi"}
+        description={
+          product?.description ||
+          "View product details, specifications, and contact us for more information."
+        }
+        url={`https://ben-gigi.com/product/${id || ""}`}
+      />
       <Card sx={{ mb: 4 }}>
         {validImages.length > 0 ? (
           <ImageCarousel

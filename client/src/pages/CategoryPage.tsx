@@ -12,6 +12,7 @@ import {
 import type { Product } from "../services/api";
 import api from "../services/api";
 import { productCategories } from "../Router";
+import SEO from "../components/SEO";
 
 const pathToCategoryName = (categoryPath: string | undefined) => {
   const found = productCategories.find((cat) => cat.path === categoryPath);
@@ -80,8 +81,20 @@ const CategoryPage = () => {
     );
   }
 
+  const category = categoryPath
+    ? productCategories.find((cat) => cat.path === categoryPath)
+    : null;
+
   return (
-    <Container maxWidth="lg" sx={{ py: { xs: 3, md: 6 } }}>
+    <Container maxWidth="xl" sx={{ py: { xs: 3, md: 6 } }}>
+      <SEO
+        title={`${category?.name || "Products"} | Pressure Cleaning Devices | Ben Gigi`}
+        description={
+          category?.description ||
+          "Browse our selection of high-pressure cleaning devices and accessories for home and professional use."
+        }
+        url={`https://ben-gigi.com/products/${categoryPath || ""}`}
+      />
       {/* Header */}
       <Box sx={{ textAlign: "center", mb: { xs: 4, md: 6 } }}>
         <Typography
