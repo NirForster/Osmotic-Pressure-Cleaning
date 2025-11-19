@@ -1,6 +1,6 @@
 // components/Navbar.tsx
 import React, { useState } from "react";
-import Mosmatic from "../assets/osmotics logo.png";
+import { getAssetUrl } from "../config/cloudinaryAssets";
 import { Link, useLocation } from "react-router-dom";
 import {
   AppBar,
@@ -252,7 +252,7 @@ const Navbar = () => {
             }}
           >
             <img
-              src={Mosmatic}
+              src={getAssetUrl("osmoticsLogo")}
               alt="Mosmatic"
               style={{
                 height: "100%",
@@ -437,7 +437,7 @@ const Navbar = () => {
                 }}
               >
                 <img
-                  src={Mosmatic}
+                  src={getAssetUrl("osmoticsLogo")}
                   alt="Mosmatic"
                   style={{
                     height: "100%",

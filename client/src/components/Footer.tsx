@@ -1,6 +1,7 @@
 // components/Footer.tsx
 import { Link } from "react-router-dom";
 import { Box, Container, Typography, IconButton, Divider } from "@mui/material";
+import { getAssetUrl } from "../config/cloudinaryAssets";
 import {
   Phone as PhoneIcon,
   Email as EmailIcon,
@@ -127,7 +128,7 @@ const Footer = () => {
                   }}
                 >
                   <img
-                    src="/waterLoaderSvg.svg"
+                    src={getAssetUrl("benGigiLogo")}
                     alt="Ben Gigi Logo"
                     style={{
                       width: "100%",
@@ -163,7 +164,7 @@ const Footer = () => {
                   }}
                 >
                   <img
-                    src="/src/assets/osmotics logo.png"
+                    src={getAssetUrl("osmoticsLogo")}
                     alt="Mosmatic"
                     style={{
                       height: "100%",

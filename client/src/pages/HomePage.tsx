@@ -1,6 +1,7 @@
 // pages/HomePage.tsx
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { getAssetUrl } from "../config/cloudinaryAssets";
 import {
   Box,
   Container,
@@ -55,7 +56,7 @@ const HomePage = () => {
     {
       id: 2,
       title: "Mosmatic",
-      subtitle: "איכות גרמנית מובילה",
+      subtitle: "איכות שוויצרית מובילה",
       description: "אביזרים ורכיבים מקצועיים למכונות שטיפה בלחץ מים",
       icon: (
         <PrecisionManufacturing
@@ -144,7 +145,7 @@ const HomePage = () => {
         }}
       >
         <video
-          src="https://www.mosmatic.com/videos/Home_EN.mp4"
+          src={getAssetUrl("video")}
           autoPlay
           loop
           muted
@@ -664,7 +665,7 @@ const HomePage = () => {
                 }}
               >
                 <img
-                  src="/src/assets/osmotics logo.png"
+                  src={getAssetUrl("osmoticsLogo")}
                   alt="Mosmatic"
                   style={{
                     height: "60px",
@@ -775,7 +776,7 @@ const HomePage = () => {
                     fontSize: { xs: "0.9rem", md: "1rem" },
                   }}
                 >
-                  עיינו במגוון הרחב של מוצרי Mosmatic באיכות גרמנית
+                  עיינו במגוון הרחב של מוצרי Mosmatic באיכות שוויצרית
                 </Typography>
               </Box>
             </Box>
