@@ -144,24 +144,24 @@ const theme = createTheme({
 
 function App() {
   return (
-      <StylesProvider jss={jss}>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <Box
-            sx={{
-              minHeight: "100vh",
-              backgroundColor: theme.palette.background.default,
-              direction: "rtl",
-            }}
-          >
-            <Navbar />
-            <Box component="main">
-              <AppRouter />
-            </Box>
-            <Footer />
+    <StylesProvider jss={jss}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Box
+          sx={{
+            minHeight: "100vh",
+            backgroundColor: theme.palette.background.default,
+            direction: "rtl",
+          }}
+        >
+          <Navbar />
+          <Box component="main">
+            <AppRouter />
           </Box>
-        </ThemeProvider>
-      </StylesProvider>
+          <Footer />
+        </Box>
+      </ThemeProvider>
+    </StylesProvider>
   );
 }
 
