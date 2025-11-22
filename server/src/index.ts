@@ -11,9 +11,15 @@ const app = express();
 const PORT = parseInt(process.env.PORT || "3000", 10);
 
 // Middleware
-// CORS configuration - allow requests from client URL in production
+// CORS configuration - allow requests from client URLs
 const corsOptions = {
-  origin: process.env.CLIENT_URL || "*", // Allow all origins in dev, specific URL in production
+  origin: process.env.CLIENT_URL || [
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "https://ben-gigi.com",
+    "https://www.ben-gigi.com",
+    "https://osmotic-pressure-cleaning-client.onrender.com",
+  ], // Allow specific origins
   credentials: true,
 };
 app.use(cors(corsOptions));
