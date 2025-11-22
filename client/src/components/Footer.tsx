@@ -19,9 +19,9 @@ import { productCategories } from "../Router";
 
 const Footer = () => {
   const quickLinks = [
-    { path: "/", name: "בית", icon: <HomeIcon /> },
-    { path: "/products", name: "מוצרים", icon: <ProductsIcon /> },
-    { path: "/articles", name: "מאמרים", icon: <ArticleIcon /> },
+    { path: "/", name: "בית", icon: <HomeIcon />, external: false },
+    { path: "https://www.mosmatic.com/downloads/catalog/ME25/", name: "מוצרים", icon: <ProductsIcon />, external: true },
+    { path: "/articles", name: "מאמרים", icon: <ArticleIcon />, external: false },
   ];
 
   const contactInfo = [
@@ -171,12 +171,21 @@ const Footer = () => {
 
                 {/* Mosmatic Logo */}
                 <Box
+                  component="a"
+                  href="https://www.mosmatic.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   sx={{
                     height: 36,
                     width: "auto",
                     ml: 1,
                     display: "flex",
                     alignItems: "center",
+                    textDecoration: "none",
+                    transition: "opacity 0.3s ease",
+                    "&:hover": {
+                      opacity: 0.8,
+                    },
                   }}
                 >
                   <img
@@ -243,8 +252,8 @@ const Footer = () => {
                 {quickLinks.map((link) => (
                   <Box
                     key={link.path}
-                    component={Link}
-                    to={link.path}
+                    component={link.external ? "a" : Link}
+                    {...(link.external ? { href: link.path, target: "_blank", rel: "noopener noreferrer" } : { to: link.path })}
                     sx={{
                       display: "flex",
                       alignItems: "center",

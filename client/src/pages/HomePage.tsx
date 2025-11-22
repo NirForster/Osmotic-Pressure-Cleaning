@@ -678,6 +678,10 @@ const HomePage = () => {
             >
               {/* Mosmatic Logo */}
               <Box
+                component="a"
+                href="https://www.mosmatic.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 sx={{
                   backgroundColor: "white",
                   borderRadius: 3,
@@ -685,6 +689,8 @@ const HomePage = () => {
                   boxShadow: "0 4px 16px rgba(0,0,0,0.08)",
                   border: "2px solid #e2e8f0",
                   transition: "all 0.3s ease",
+                  textDecoration: "none",
+                  display: "block",
                   "&:hover": {
                     borderColor: "#0ea5e9",
                     transform: "translateY(-2px)",

@@ -239,6 +239,10 @@ const Navbar = () => {
         {/* Mosmatic Logo in Mobile */}
         <Box sx={{ display: "flex", mt: 4 }}>
           <Box
+            component="a"
+            href="https://www.mosmatic.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             sx={{
               height: 60,
               width: "auto",
@@ -249,6 +253,12 @@ const Navbar = () => {
               backgroundColor: "rgba(14, 165, 233, 0.1)",
               borderRadius: 2,
               border: "1px solid rgba(14, 165, 233, 0.2)",
+              textDecoration: "none",
+              transition: "all 0.3s ease",
+              "&:hover": {
+                backgroundColor: "rgba(14, 165, 233, 0.2)",
+                borderColor: "#0ea5e9",
+              },
             }}
           >
             <img
@@ -429,11 +439,20 @@ const Navbar = () => {
             {/* Mosmatic Logo - Desktop Only */}
             {!isMobile && (
               <Box
+                component="a"
+                href="https://www.mosmatic.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 sx={{
                   height: { xs: 28, sm: 32 },
                   width: "auto",
                   display: "flex",
                   alignItems: "center",
+                  textDecoration: "none",
+                  transition: "opacity 0.3s ease",
+                  "&:hover": {
+                    opacity: 0.8,
+                  },
                 }}
               >
                 <img
