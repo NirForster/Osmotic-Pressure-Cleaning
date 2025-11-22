@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { getAssetUrl } from "../config/cloudinaryAssets";
 import SEO from "../components/SEO";
+import { productCategories } from "../Router";
 import {
   Box,
   Container,
@@ -572,25 +573,30 @@ const HomePage = () => {
                   icon: "💧",
                   title: "מוצרי ניקיון בלחץ מים",
                   description: "פתרונות ניקוי מתקדמים",
+                  categoryPath: "professional-equipment",
                 },
                 {
                   icon: "🚗",
                   title: "אביזרים לשטיפת רכב",
                   description: "ציוד מקצועי לשטיפה",
+                  categoryPath: "accessories",
                 },
                 {
                   icon: "🔧",
                   title: "מכונות שטיפה",
                   description: "לחץ מים חמים או קרים",
+                  categoryPath: "pressure-washers",
                 },
                 {
                   icon: "🔄",
                   title: "מחברים סיבוביים",
                   description: "רכיבים איכותיים",
+                  categoryPath: "swivel-connectors",
                 },
               ].map((service, index) => (
                 <Box
                   key={index}
+                  onClick={() => navigate(`/products/${service.categoryPath}`)}
                   sx={{
                     backgroundColor: "white",
                     borderRadius: 3,
@@ -599,6 +605,7 @@ const HomePage = () => {
                     boxShadow: "0 4px 16px rgba(0,0,0,0.08)",
                     border: "1px solid #e2e8f0",
                     transition: "all 0.3s ease",
+                    cursor: "pointer",
                     "&:hover": {
                       transform: "translateY(-4px)",
                       boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
