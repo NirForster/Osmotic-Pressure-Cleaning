@@ -894,8 +894,8 @@ const HomePage = () => {
                 textTransform: "none",
                 boxShadow: "0 4px 16px rgba(14, 165, 233, 0.3)",
                 "& .MuiButton-startIcon": {
-                  marginRight: 1.5,
-                  marginLeft: 0,
+                  marginLeft: 1.5,
+                  marginRight: 0,
                 },
                 "&:hover": {
                   backgroundColor: "#0284c7",
