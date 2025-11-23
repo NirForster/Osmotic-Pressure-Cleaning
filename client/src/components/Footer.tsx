@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import { Box, Container, Typography, IconButton, Divider } from "@mui/material";
 import { getAssetUrl } from "../config/cloudinaryAssets";
+import BenGigiLogo from "./BenGigiLogo";
 import {
   Phone as PhoneIcon,
   Email as EmailIcon,
@@ -143,15 +144,7 @@ const Footer = () => {
                     border: "2px solid rgba(255, 255, 255, 0.2)",
                   }}
                 >
-                  <img
-                    src={getAssetUrl("benGigiLogo")}
-                    alt="Ben Gigi Logo"
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                    }}
-                  />
+                  <BenGigiLogo size={50} />
                 </Box>
 
                 {/* Company Name */}

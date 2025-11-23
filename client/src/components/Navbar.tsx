@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { getAssetUrl } from "../config/cloudinaryAssets";
 import { Link, useLocation } from "react-router-dom";
+import BenGigiLogo from "./BenGigiLogo";
 import {
   AppBar,
   Toolbar,
@@ -87,15 +88,7 @@ const Navbar = () => {
               border: "2px solid rgba(255, 255, 255, 0.2)",
             }}
           >
-            <img
-              src="/waterLoaderSvg.svg"
-              alt="Ben Gigi Logo"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-              }}
-            />
+            <BenGigiLogo size={40} />
           </Box>
 
           {/* Company Name */}
@@ -305,15 +298,7 @@ const Navbar = () => {
                 boxShadow: "0 2px 8px rgba(14, 165, 233, 0.2)",
               }}
             >
-              <img
-                src="/waterLoaderSvg.svg"
-                alt="Ben Gigi Logo"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                }}
-              />
+              <BenGigiLogo size={40} />
             </Box>
 
             {/* Company Name */}
