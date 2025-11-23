@@ -22,6 +22,7 @@ import {
   CleaningServices,
   Sync,
   KeyboardTab,
+  WaterDrop,
 } from "@mui/icons-material";
 
 interface CarouselSlide {
@@ -572,7 +573,7 @@ const HomePage = () => {
             >
               {[
                 {
-                  icon: <LocalCarWash sx={{ fontSize: "2.5rem" }} />,
+                  icon: <WaterDrop sx={{ fontSize: "2.5rem" }} />,
                   title: "מוצרי ניקיון בלחץ מים",
                   description: "פתרונות ניקוי מתקדמים",
                   categoryPath: "professional-equipment",

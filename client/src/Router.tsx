@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 import Articles from "./pages/Articles";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
-import { LocalCarWash, Sync, KeyboardTab } from "@mui/icons-material";
+import { LocalCarWash, Sync, KeyboardTab, WaterDrop } from "@mui/icons-material";
 
 // Simple product categories - no complex imports
 export const productCategories = [
@@ -33,7 +33,7 @@ export const productCategories = [
     id: "professional-equipment",
     path: "professional-equipment",
     name: "ציוד ניקוי מקצועי בלחץ מים",
-    icon: "🏭",
+    icon: <WaterDrop sx={{ fontSize: "inherit" }} />,
     description: "ציוד ניקוי מקצועי לשימוש תעשייתי",
   },
   {
