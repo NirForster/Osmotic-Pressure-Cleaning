@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import Articles from "./pages/Articles";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
+import { LocalCarWash, Sync, KeyboardTab } from "@mui/icons-material";
 
 // Simple product categories - no complex imports
 export const productCategories = [
@@ -11,21 +12,21 @@ export const productCategories = [
     id: "accessories",
     path: "accessories",
     name: "אביזרים לשטיפת רכב",
-    icon: "🔧",
+    icon: <LocalCarWash sx={{ fontSize: "inherit" }} />,
     description: "אביזרים איכותיים לשטיפת רכב בלחץ מים",
   },
   {
     id: "swivel-connectors",
     path: "swivel-connectors",
     name: "מחבר סיבובי - סביבל",
-    icon: "🔄",
+    icon: <Sync sx={{ fontSize: "inherit" }} />,
     description: "מחברים סיבוביים מקצועיים למכונות שטיפה",
   },
   {
     id: "pressure-washers",
     path: "pressure-washers",
     name: "מכונות שטיפה בלחץ מים",
-    icon: "💧",
+    icon: <KeyboardTab sx={{ fontSize: "inherit" }} />,
     description: "מכונות שטיפה בלחץ מים למגוון שימושים",
   },
   {

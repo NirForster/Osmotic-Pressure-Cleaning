@@ -124,6 +124,10 @@ const ProductsPage = () => {
                   sx={{
                     fontSize: { xs: "3rem", md: "4rem" },
                     mb: { xs: 1, md: 2 },
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    color: "#0ea5e9",
                     filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.2))",
                   }}
                 >

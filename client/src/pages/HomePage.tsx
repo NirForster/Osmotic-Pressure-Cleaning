@@ -20,6 +20,8 @@ import {
   LocalCarWash,
   PrecisionManufacturing,
   CleaningServices,
+  Sync,
+  KeyboardTab,
 } from "@mui/icons-material";
 
 interface CarouselSlide {
@@ -570,25 +572,25 @@ const HomePage = () => {
             >
               {[
                 {
-                  icon: "💧",
+                  icon: <LocalCarWash sx={{ fontSize: "2.5rem" }} />,
                   title: "מוצרי ניקיון בלחץ מים",
                   description: "פתרונות ניקוי מתקדמים",
                   categoryPath: "professional-equipment",
                 },
                 {
-                  icon: "🚗",
+                  icon: <LocalCarWash sx={{ fontSize: "2.5rem" }} />,
                   title: "אביזרים לשטיפת רכב",
                   description: "ציוד מקצועי לשטיפה",
                   categoryPath: "accessories",
                 },
                 {
-                  icon: "🔧",
+                  icon: <KeyboardTab sx={{ fontSize: "2.5rem" }} />,
                   title: "מכונות שטיפה",
                   description: "לחץ מים חמים או קרים",
                   categoryPath: "pressure-washers",
                 },
                 {
-                  icon: "🔄",
+                  icon: <Sync sx={{ fontSize: "2.5rem" }} />,
                   title: "מחברים סיבוביים",
                   description: "רכיבים איכותיים",
                   categoryPath: "swivel-connectors",
@@ -615,8 +617,11 @@ const HomePage = () => {
                 >
                   <Box
                     sx={{
-                      fontSize: "2.5rem",
                       mb: 2,
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      color: "#0ea5e9",
                       filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.1))",
                     }}
                   >
