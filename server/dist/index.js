@@ -22,9 +22,32 @@ dotenv_1.default.config();
 const app = (0, express_1.default)();
 const PORT = parseInt(process.env.PORT || "3000", 10);
 // Middleware
-// CORS configuration - allow requests from client URL in production
+// CORS configuration - allow requests from client URLs
+const allowedOrigins = [
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "https://ben-gigi.com",
+    "https://www.ben-gigi.com",
+    "https://osmotic-pressure-cleaning-client.onrender.com",
+];
+// If CLIENT_URL is set, add it to the allowed origins
+if (process.env.CLIENT_URL) {
+    allowedOrigins.push(process.env.CLIENT_URL);
+}
 const corsOptions = {
-    origin: process.env.CLIENT_URL || "*", // Allow all origins in dev, specific URL in production
+    origin: (origin, callback) => {
+        // Allow requests with no origin (like mobile apps or curl requests)
+        if (!origin)
+            return callback(null, true);
+        // Check if origin is in allowed list
+        if (allowedOrigins.includes(origin)) {
+            callback(null, true);
+        }
+        else {
+            console.warn(`CORS blocked origin: ${origin}`);
+            callback(new Error("Not allowed by CORS"));
+        }
+    },
     credentials: true,
 };
 app.use((0, cors_1.default)(corsOptions));

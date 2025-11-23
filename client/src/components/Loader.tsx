@@ -1,7 +1,7 @@
 // src/components/Loader.tsx
 import { Box } from "@mui/material";
 import Lottie from "lottie-react";
-import { useEffect, useState } from "react";
+import waterLoaderAnimation from "../assets/waterLoader_lottie.json";
 
 interface LoaderProps {
   size?: number;
@@ -9,25 +9,6 @@ interface LoaderProps {
 }
 
 export default function Loader({ size = 200, fullScreen = false }: LoaderProps) {
-  const [animationData, setAnimationData] = useState<any>(null);
-
-  useEffect(() => {
-    // Load the Lottie file from public folder
-    fetch("/waterLoader_lotttie.json")
-      .then((response) => {
-        if (!response.ok) throw new Error("File not found");
-        return response.json();
-      })
-      .then((data) => setAnimationData(data))
-      .catch((error) => {
-        console.error("Error loading Lottie animation:", error);
-      });
-  }, []);
-
-  if (!animationData) {
-    return null;
-  }
-
   return (
     <Box
       sx={{
@@ -40,7 +21,7 @@ export default function Loader({ size = 200, fullScreen = false }: LoaderProps) 
       }}
     >
       <Lottie
-        animationData={animationData}
+        animationData={waterLoaderAnimation}
         loop
         autoplay
         style={{ width: size, height: size }}
