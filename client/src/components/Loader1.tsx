@@ -1,6 +1,6 @@
 // src/components/Loader.tsx
 import Lottie from "lottie-react";
-import animationData from "../assets/waterLoader1.json";
+import animationData from "../assets/waterLoader_lottie.json";
 
 export default function Loader() {
   return (
