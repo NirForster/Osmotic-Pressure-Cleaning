@@ -13,6 +13,7 @@ import {
   Pagination,
 } from "@mui/material";
 import { Search as SearchIcon } from "@mui/icons-material";
+import Loader from "../components/Loader";
 
 // Type definitions
 interface Product {
@@ -269,24 +270,7 @@ const ProductCategory: React.FC<ProductCategoryProps> = ({ category }) => {
 
       {/* Products Grid */}
       {loading ? (
-        <Box
-          sx={{
-            display: "grid",
-            gridTemplateColumns: {
-              xs: "1fr",
-              sm: "repeat(2, 1fr)",
-              md: "repeat(3, 1fr)",
-              lg: "repeat(3, 1fr)",
-              xl: "repeat(3, 1fr)",
-            },
-            gap: 3,
-            maxWidth: "1200px",
-            mx: "auto",
-            minHeight: 400,
-          }}
-        >
-          {/* You can place your loader here or keep it centered if you wish */}
-        </Box>
+        <Loader size={150} />
       ) : (
         <Box
           sx={{

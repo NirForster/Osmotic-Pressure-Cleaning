@@ -7,8 +7,8 @@ import {
   CardContent,
   CardMedia,
   Box,
-  CircularProgress,
 } from "@mui/material";
+import Loader from "../components/Loader";
 import type { Product } from "../services/api";
 import api from "../services/api";
 import { productCategories } from "../Router";
@@ -59,16 +59,7 @@ const CategoryPage = () => {
   }, [categoryPath]);
 
   if (loading) {
-    return (
-      <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        minHeight="60vh"
-      >
-        <CircularProgress />
-      </Box>
-    );
+    return <Loader />;
   }
 
   if (error) {

@@ -4,10 +4,10 @@ import {
   Container,
   Typography,
   Box,
-  CircularProgress,
   Card,
   CardContent,
 } from "@mui/material";
+import Loader from "../components/Loader";
 import ImageCarousel from "../components/ImageCarousel";
 import api from "../services/api";
 import type { Product } from "../services/api";
@@ -39,16 +39,7 @@ const ProductPage = () => {
   }, [id]);
 
   if (loading) {
-    return (
-      <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        minHeight="60vh"
-      >
-        <CircularProgress />
-      </Box>
-    );
+    return <Loader />;
   }
 
   if (error || !product) {
