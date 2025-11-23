@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { getAssetUrl } from "../config/cloudinaryAssets";
 import SEO from "../components/SEO";
-import { productCategories } from "../Router";
 import {
   Box,
   Container,
