@@ -8,7 +8,10 @@ interface LoaderProps {
   fullScreen?: boolean;
 }
 
-export default function Loader({ size = 200, fullScreen = false }: LoaderProps) {
+export default function Loader({
+  size = 200,
+  fullScreen = false,
+}: LoaderProps) {
   return (
     <Box
       sx={{
@@ -29,4 +32,3 @@ export default function Loader({ size = 200, fullScreen = false }: LoaderProps) 
     </Box>
   );
 }
-
