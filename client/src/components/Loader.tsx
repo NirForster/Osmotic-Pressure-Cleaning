@@ -13,21 +13,14 @@ export default function Loader({ size = 200, fullScreen = false }: LoaderProps) 
 
   useEffect(() => {
     // Load the Lottie file from public folder
-    // Try both possible filenames (waterLoader_lottie.json or waterLoader_lotttie.json)
-    fetch("/waterLoader_lottie.json")
+    fetch("/waterLoader_lotttie.json")
       .then((response) => {
         if (!response.ok) throw new Error("File not found");
         return response.json();
       })
       .then((data) => setAnimationData(data))
-      .catch(() => {
-        // Fallback to waterLoader_lotttie.json (with 3 t's)
-        fetch("/waterLoader_lotttie.json")
-          .then((response) => response.json())
-          .then((data) => setAnimationData(data))
-          .catch((error) => {
-            console.error("Error loading Lottie animation:", error);
-          });
+      .catch((error) => {
+        console.error("Error loading Lottie animation:", error);
       });
   }, []);
 
