@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { connectDB } from "./config/database";
 import productRoutes from "./routes/productRoutes";
+import { sitemapController } from "./controllers/sitemapController";
 
 // Load environment variables
 dotenv.config();
@@ -48,6 +49,9 @@ app.use(express.json());
 
 // Routes
 app.use("/api/products", productRoutes);
+
+// Sitemap endpoint (dynamic, includes all products)
+app.get("/sitemap.xml", sitemapController.getSitemap);
 
 // Health check endpoint
 app.get("/health", (req, res) => {

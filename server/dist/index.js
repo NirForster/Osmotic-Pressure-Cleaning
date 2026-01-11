@@ -17,6 +17,7 @@ const cors_1 = __importDefault(require("cors"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const database_1 = require("./config/database");
 const productRoutes_1 = __importDefault(require("./routes/productRoutes"));
+const sitemapController_1 = require("./controllers/sitemapController");
 // Load environment variables
 dotenv_1.default.config();
 const app = (0, express_1.default)();
@@ -54,6 +55,8 @@ app.use((0, cors_1.default)(corsOptions));
 app.use(express_1.default.json());
 // Routes
 app.use("/api/products", productRoutes_1.default);
+// Sitemap endpoint (dynamic, includes all products)
+app.get("/sitemap.xml", sitemapController_1.sitemapController.getSitemap);
 // Health check endpoint
 app.get("/health", (req, res) => {
     res.json({ status: "ok" });
