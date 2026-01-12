@@ -25,21 +25,21 @@ const categorySEO: Record<
   { title: string; description: string; keywords: string }
 > = {
   accessories: {
-    title: "אביזרים לשטיפת רכב | Car Wash Accessories | Ben Gigi",
+    title: "אביזרים לשטיפת רכב | Car Wash Accessories | בן גיגי | Ben Gigi",
     description:
       "אביזרים איכותיים לשטיפת רכב בלחץ מים ממובילי התעשייה. מגוון רחב של אביזרים מקצועיים לכל צורך. High-quality car wash accessories and equipment for professional use.",
     keywords:
       "בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, אביזרים לשטיפת רכב, אביזרי שטיפת רכב, ציוד שטיפת רכב, Ben Gigi, car wash accessories, car cleaning accessories, pressure washer accessories",
   },
   "swivel-connectors": {
-    title: "מחבר סיבובי - סביבל | Swivel Connectors | Ben Gigi",
+    title: "מחבר סיבובי - סביבל | Swivel Connectors | בן גיגי | Ben Gigi",
     description:
       "מחברים סיבוביים מקצועיים למכונות שטיפה בלחץ מים. איכות שוויצרית מובילה מ-Mosmatic. Professional swivel connectors for pressure washing equipment.",
     keywords:
       "בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, מחבר סיבובי, סביבל, מחבר סביבוני, swivel connector, swivel joint, pressure washer swivel, Ben Gigi, Mosmatic",
   },
   "pressure-washers": {
-    title: "מכונות שטיפה בלחץ מים | Pressure Washers | Ben Gigi",
+    title: "מכונות שטיפה בלחץ מים | Pressure Washers | בן גיגי | Ben Gigi",
     description:
       "מכונות שטיפה בלחץ מים חמים או קרים לבית ולמקצוע. מגוון רחב של דגמים וספקים ממובילי התעשייה. Pressure washers for home and professional use - hot and cold water models.",
     keywords:
@@ -47,21 +47,21 @@ const categorySEO: Record<
   },
   "professional-equipment": {
     title:
-      "ציוד ניקוי מקצועי בלחץ מים | Professional Cleaning Equipment | Ben Gigi",
+      "ציוד ניקוי מקצועי בלחץ מים | Professional Cleaning Equipment | בן גיגי | Ben Gigi",
     description:
       "ציוד ניקוי מקצועי ותעשייתי בלחץ מים. פתרונות מתקדמים לניקוי יעיל ומהיר. Professional and industrial high-pressure cleaning equipment.",
     keywords:
       "בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, ציוד ניקוי מקצועי, ציוד ניקוי תעשייתי, מכונות ניקוי תעשייתיות, professional cleaning equipment, industrial pressure washers, Ben Gigi",
   },
   "vacuum-cleaners": {
-    title: "שואבי אבק מקצועיים | Professional Vacuum Cleaners | Ben Gigi",
+    title: "שואבי אבק מקצועיים | Professional Vacuum Cleaners | בן גיגי | Ben Gigi",
     description:
       "שואבי אבק תעשייתיים מקצועיים לכל סוג פסולת. פתרונות ניקוי יעילים ומהירים. Professional industrial vacuum cleaners for all types of waste.",
     keywords:
       "בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, שואב אבק, שואבי אבק, שואב אבק תעשייתי, שואבי אבק מקצועיים, vacuum cleaner, industrial vacuum, professional vacuum, Ben Gigi",
   },
   "rm-brand": {
-    title: "מוצרי R+M ו-Mosmatic | R+M and Mosmatic Products | Ben Gigi",
+    title: "מוצרי R+M ו-Mosmatic | R+M and Mosmatic Products | בן גיגי | Ben Gigi",
     description:
       "מוצרי R+M ו-Mosmatic המובילים בתחום מכונות שטיפה וציוד ניקוי מקצועי. איכות שוויצרית מובילה. Leading R+M and Mosmatic products for pressure washing and professional cleaning equipment.",
     keywords:
@@ -168,7 +168,7 @@ const CategoryPage = () => {
   return (
     <Container maxWidth="xl" sx={{ py: { xs: 3, md: 6 } }}>
       <SEO
-        title={seoData?.title || `${category?.name || "Products"} | Ben Gigi`}
+        title={seoData?.title || `${category?.name || "Products"} | בן גיגי | Ben Gigi`}
         description={
           seoData?.description ||
           category?.description ||

@@ -95,8 +95,8 @@ const ProductPage = () => {
   });
 
   const productTitle = product
-    ? `${product.name} | Ben Gigi`
-    : "מוצר | Product | Ben Gigi";
+    ? `${product.name} | בן גיגי | Ben Gigi`
+    : "מוצר | Product | בן גיגי | Ben Gigi";
   const productDescription = product?.description
     ? `${product.description} צפה בפרטי המוצר, מפרטים טכניים ומידע נוסף. View product details, specifications, and contact us for more information.`
     : "צפה בפרטי המוצר, מפרטים טכניים ומידע נוסף. צור קשר לייעוץ מקצועי. View product details, specifications, and contact us for more information.";

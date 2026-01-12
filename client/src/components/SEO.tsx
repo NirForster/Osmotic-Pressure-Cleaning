@@ -10,14 +10,17 @@ interface SEOProps {
 }
 
 const SEO = ({
-  title = "Ben Gigi | ציוד ניקוי בלחץ מים | מכונות שטיפה מקצועיות | High-Pressure Cleaning Devices",
-  description = "Ben Gigi - יבואנית רשמית של מוצרי Mosmatic. מכונות שטיפה בלחץ מים, אביזרים לשטיפת רכב, שואבי אבק מקצועיים וציוד ניקוי תעשייתי. איכות שוויצרית מובילה. High-pressure water cleaning devices for home and professional use.",
+  title = "בן גיגי | Ben Gigi | ציוד ניקוי בלחץ מים | מכונות שטיפה מקצועיות | High-Pressure Cleaning Devices",
+  description = "בן גיגי (Ben Gigi) - יבואנית רשמית של מוצרי Mosmatic. מכונות שטיפה בלחץ מים, אביזרים לשטיפת רכב, שואבי אבק מקצועיים וציוד ניקוי תעשייתי. איכות שוויצרית מובילה. High-pressure water cleaning devices for home and professional use.",
   keywords = "בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, מכונת שטיפה, לחץ מים, ניקוי בלחץ, מכונת כביסה בלחץ, Ben Gigi, Mosmatic, ציוד ניקוי מקצועי, אביזרים לשטיפת רכב, pressure washer, high pressure cleaning, water pressure cleaner, power washer Israel, cleaning equipment",
   image = "https://ben-gigi.com/images/og-image.jpg",
   url = "https://ben-gigi.com/",
   type = "website",
 }: SEOProps) => {
-  const fullTitle = title.includes("Ben Gigi") ? title : `${title} | Ben Gigi`;
+  // Ensure both Hebrew and English company name appear in title
+  const fullTitle = title.includes("Ben Gigi") || title.includes("בן גיגי") 
+    ? title 
+    : `${title} | בן גיגי | Ben Gigi`;
 
   useEffect(() => {
     // Update document title

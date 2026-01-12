@@ -5,7 +5,7 @@ const Articles = () => {
   return (
     <>
       <SEO
-        title="מאמרים ומדריכים | Articles & Guides | Ben Gigi"
+        title="מאמרים ומדריכים | Articles & Guides | בן גיגי | Ben Gigi"
         description="מאמרים, מדריכים וטיפים על ציוד ניקוי בלחץ מים, תחזוקת מכונות שטיפה ושיטות עבודה מומלצות. מידע מקצועי מ-Ben Gigi. Articles and guides about high-pressure cleaning equipment, maintenance tips, and best practices."
         keywords="בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, מאמרים, מדריכים, טיפים לניקוי, תחזוקת מכונות שטיפה, Ben Gigi, articles, guides, pressure washer maintenance, cleaning tips"
         url="https://ben-gigi.com/articles"

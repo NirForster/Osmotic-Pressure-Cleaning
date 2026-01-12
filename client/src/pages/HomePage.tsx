@@ -137,8 +137,8 @@ const HomePage = () => {
   return (
     <Box>
       <SEO
-        title="Ben Gigi | ציוד ניקוי בלחץ מים | מכונות שטיפה מקצועיות | High-Pressure Cleaning Devices"
-        description="Ben Gigi - יבואנית רשמית ובלעדית של Mosmatic AG ו-INTERPUMP בישראל. מובילים בתחום מכונות שטיפה בלחץ מים, אביזרים לשטיפת רכב, שואבי אבק מקצועיים וציוד ניקוי תעשייתי. איכות שוויצרית מובילה. High-pressure water cleaning devices for home and professional use."
+        title="בן גיגי | Ben Gigi | ציוד ניקוי בלחץ מים | מכונות שטיפה מקצועיות | High-Pressure Cleaning Devices"
+        description="בן גיגי (Ben Gigi) - יבואנית רשמית ובלעדית של Mosmatic AG ו-INTERPUMP בישראל. מובילים בתחום מכונות שטיפה בלחץ מים, אביזרים לשטיפת רכב, שואבי אבק מקצועיים וציוד ניקוי תעשייתי. איכות שוויצרית מובילה. High-pressure water cleaning devices for home and professional use."
         keywords="בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, מכונת שטיפה, לחץ מים, ניקוי בלחץ, מכונת כביסה בלחץ, מכונת ניקוי בלחץ, Ben Gigi, Mosmatic, ציוד ניקוי מקצועי, אביזרים לשטיפת רכב, שואבי אבק, מחבר סיבובי, סביבל, pressure washer, high pressure cleaning, water pressure cleaner, power washer Israel, cleaning equipment"
         url="https://ben-gigi.com/"
       />
