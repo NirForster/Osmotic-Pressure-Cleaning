@@ -21,8 +21,18 @@ import { productCategories } from "../Router";
 const Footer = () => {
   const quickLinks = [
     { path: "/", name: "בית", icon: <HomeIcon />, external: false },
-    { path: "https://www.mosmatic.com/downloads/catalog/ME25/", name: "מוצרים", icon: <ProductsIcon />, external: true },
-    { path: "/articles", name: "מאמרים", icon: <ArticleIcon />, external: false },
+    {
+      path: "https://www.mosmatic.com/downloads/catalog/ME26/",
+      name: "מוצרים",
+      icon: <ProductsIcon />,
+      external: true,
+    },
+    {
+      path: "/articles",
+      name: "מאמרים",
+      icon: <ArticleIcon />,
+      external: false,
+    },
   ];
 
   const contactInfo = [
@@ -246,7 +256,13 @@ const Footer = () => {
                   <Box
                     key={link.path}
                     component={link.external ? "a" : Link}
-                    {...(link.external ? { href: link.path, target: "_blank", rel: "noopener noreferrer" } : { to: link.path })}
+                    {...(link.external
+                      ? {
+                          href: link.path,
+                          target: "_blank",
+                          rel: "noopener noreferrer",
+                        }
+                      : { to: link.path })}
                     sx={{
                       display: "flex",
                       alignItems: "center",
