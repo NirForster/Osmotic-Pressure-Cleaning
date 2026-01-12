@@ -1,12 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import {
-  Container,
-  Typography,
-  Box,
-  Card,
-  CardContent,
-} from "@mui/material";
+import { Container, Typography, Box, Card, CardContent } from "@mui/material";
 import Loader from "../components/Loader";
 import ImageCarousel from "../components/ImageCarousel";
 import api from "../services/api";
@@ -100,14 +94,22 @@ const ProductPage = () => {
     failed: Array.from(failedImages),
   });
 
+  const productTitle = product
+    ? `${product.name} | Ben Gigi`
+    : "מוצר | Product | Ben Gigi";
+  const productDescription = product?.description
+    ? `${product.description} צפה בפרטי המוצר, מפרטים טכניים ומידע נוסף. View product details, specifications, and contact us for more information.`
+    : "צפה בפרטי המוצר, מפרטים טכניים ומידע נוסף. צור קשר לייעוץ מקצועי. View product details, specifications, and contact us for more information.";
+  const productKeywords = product
+    ? `בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, ${product.name}, ${product.categoryName}, Ben Gigi, pressure washer, cleaning equipment`
+    : undefined;
+
   return (
     <Container maxWidth="md" sx={{ py: { xs: 3, md: 6 } }}>
       <SEO
-        title={product ? `${product.name} | Ben Gigi` : "Product | Ben Gigi"}
-        description={
-          product?.description ||
-          "View product details, specifications, and contact us for more information."
-        }
+        title={productTitle}
+        description={productDescription}
+        keywords={productKeywords}
         url={`https://ben-gigi.com/product/${id || ""}`}
       />
       <Card sx={{ mb: 4 }}>
@@ -137,7 +139,7 @@ const ProductPage = () => {
           </Box>
         )}
         <CardContent>
-          <Typography variant="h4" fontWeight={700} gutterBottom>
+          <Typography variant="h4" component="h1" fontWeight={700} gutterBottom>
             {product.name}
           </Typography>
           {product.subHeader && (
@@ -154,40 +156,79 @@ const ProductPage = () => {
             </Typography>
           )}
           {product.bulletPoints && product.bulletPoints.length > 0 && (
-            <Box sx={{ mt: 2 }}>
-              <Typography variant="subtitle1" fontWeight={600}>
-                מאפיינים:
+            <Box sx={{ mt: 3 }}>
+              <Typography
+                variant="h6"
+                component="h2"
+                fontWeight={600}
+                gutterBottom
+              >
+                מאפיינים עיקריים:
               </Typography>
-              <ul>
+              <Box
+                component="ul"
+                sx={{
+                  pl: 2,
+                  mb: 0,
+                  "& li": {
+                    mb: 1,
+                  },
+                }}
+              >
                 {product.bulletPoints.map((point, i) => (
                   <li key={i}>
-                    <Typography variant="body2">{point}</Typography>
+                    <Typography variant="body2" component="span">
+                      {point}
+                    </Typography>
                   </li>
                 ))}
-              </ul>
+              </Box>
             </Box>
           )}
-          {product.pdfUrl && (
-            <Typography variant="body2" sx={{ mt: 2 }}>
-              <a
-                href={product.pdfUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+          {(product.pdfUrl || product.videoUrl) && (
+            <Box sx={{ mt: 3, pt: 2, borderTop: "1px solid #e2e8f0" }}>
+              <Typography
+                variant="h6"
+                component="h2"
+                fontWeight={600}
+                gutterBottom
+                sx={{ mb: 2 }}
               >
-                לצפייה בקטלוג
-              </a>
-            </Typography>
-          )}
-          {product.videoUrl && (
-            <Typography variant="body2" sx={{ mt: 2 }}>
-              <a
-                href={product.videoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                לצפייה בסרטון
-              </a>
-            </Typography>
+                קבצים נוספים:
+              </Typography>
+              <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+                {product.pdfUrl && (
+                  <Typography variant="body2">
+                    <a
+                      href={product.pdfUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        color: "#0ea5e9",
+                        textDecoration: "none",
+                      }}
+                    >
+                      📄 לצפייה בקטלוג (PDF)
+                    </a>
+                  </Typography>
+                )}
+                {product.videoUrl && (
+                  <Typography variant="body2">
+                    <a
+                      href={product.videoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        color: "#0ea5e9",
+                        textDecoration: "none",
+                      }}
+                    >
+                      ▶️ לצפייה בסרטון
+                    </a>
+                  </Typography>
+                )}
+              </Box>
+            </Box>
           )}
         </CardContent>
       </Card>

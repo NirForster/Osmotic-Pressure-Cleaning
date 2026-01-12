@@ -136,7 +136,12 @@ const HomePage = () => {
 
   return (
     <Box>
-      <SEO />
+      <SEO
+        title="Ben Gigi | ציוד ניקוי בלחץ מים | מכונות שטיפה מקצועיות | High-Pressure Cleaning Devices"
+        description="Ben Gigi - יבואנית רשמית ובלעדית של Mosmatic AG ו-INTERPUMP בישראל. מובילים בתחום מכונות שטיפה בלחץ מים, אביזרים לשטיפת רכב, שואבי אבק מקצועיים וציוד ניקוי תעשייתי. איכות שוויצרית מובילה. High-pressure water cleaning devices for home and professional use."
+        keywords="בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, מכונת שטיפה, לחץ מים, ניקוי בלחץ, מכונת כביסה בלחץ, מכונת ניקוי בלחץ, Ben Gigi, Mosmatic, ציוד ניקוי מקצועי, אביזרים לשטיפת רכב, שואבי אבק, מחבר סיבובי, סביבל, pressure washer, high pressure cleaning, water pressure cleaner, power washer Israel, cleaning equipment"
+        url="https://ben-gigi.com/"
+      />
       {/* Hero Video Section */}
       <Box
         sx={{
@@ -180,11 +185,12 @@ const HomePage = () => {
             left: 0,
             right: 0,
             bottom: 0,
-            background: currentSlide === 0 
-              ? `radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.15) 0%, transparent 50%),
+            background:
+              currentSlide === 0
+                ? `radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.15) 0%, transparent 50%),
                  radial-gradient(circle at 80% 80%, rgba(2, 132, 199, 0.15) 0%, transparent 50%),
                  radial-gradient(circle at 40% 20%, rgba(8, 145, 178, 0.1) 0%, transparent 50%)`
-              : `radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+                : `radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
                  radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%)`,
             opacity: 0.8,
           }}
@@ -447,6 +453,7 @@ const HomePage = () => {
             {/* Main Headline */}
             <Typography
               variant="h2"
+              component="h1"
               sx={{
                 fontWeight: 900,
                 fontSize: { xs: "2.2rem", md: "3.5rem", lg: "4rem" },

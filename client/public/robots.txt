@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ben-gigi.com/sitemap.xml
+# Dynamic sitemap (includes all products) - served from backend server
+Sitemap: https://osmotic-pressure-cleaning.onrender.com/sitemap.xml
 
