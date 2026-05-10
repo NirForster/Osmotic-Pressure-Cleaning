@@ -29,10 +29,22 @@ interface ScrapingResult {
   totalProducts?: number;
 }
 
+type ImportMode = "upsert" | "replace";
+
+function parseArgs() {
+  const args = process.argv.slice(2);
+  const dryRun = args.includes("--dry-run");
+
+  const modeArg = args.find((arg) => arg.startsWith("--mode="));
+  const rawMode = modeArg ? modeArg.split("=")[1] : "upsert";
+  const mode: ImportMode = rawMode === "replace" ? "replace" : "upsert";
+
+  return { dryRun, mode };
+}
+
 async function importProducts() {
   try {
-    // Connect to MongoDB
-    await connectDB();
+    const { dryRun, mode } = parseArgs();
 
     // Read the JSON file
     const jsonPath = path.join(
@@ -48,7 +60,7 @@ async function importProducts() {
     }
 
     // Check for duplicate IDs in the JSON
-    const idSet = new Set();
+    const idSet = new Set<string>();
     const duplicateIds: string[] = [];
     for (const product of jsonData.data) {
       if (idSet.has(product.id)) {
@@ -61,11 +73,7 @@ async function importProducts() {
       console.warn(`Duplicate IDs found in JSON:`, duplicateIds);
     }
 
-    // Clear existing products
-    await Product.deleteMany({});
-    console.log("Cleared existing products");
-
-    // Insert new products with full image URLs
+    // Prepare products with normalized image URLs
     const products = jsonData.data.map((product) => ({
       name: product.name,
       url: product.url,
@@ -87,24 +95,53 @@ async function importProducts() {
       bulletPoints: product.bulletPoints || [],
     }));
 
+    console.log("Import summary:");
+    console.log(`- mode: ${mode}${dryRun ? " (dry-run)" : ""}`);
+    console.log(`- input rows: ${jsonData.data.length}`);
+    console.log(`- unique ids: ${idSet.size}`);
+    console.log(`- duplicate id rows: ${duplicateIds.length}`);
+
+    if (dryRun) {
+      console.log("Dry-run enabled: no database changes were made.");
+      process.exit(0);
+    }
+
+    // Connect to MongoDB only when writes are enabled
+    await connectDB();
+
+    if (mode === "replace") {
+      // Explicitly destructive mode (opt-in only)
+      await Product.deleteMany({});
+      console.log("Cleared existing products");
+    }
+
     try {
-      await Product.insertMany(products, { ordered: false });
-      console.log(`Successfully imported ${products.length} products`);
-    } catch (insertErr: any) {
-      if (insertErr.writeErrors) {
-        console.error(`Insert errors (${insertErr.writeErrors.length}):`);
-        insertErr.writeErrors.forEach((err: any) => {
-          console.error(
-            `Error for product with id=${err.err.op.id}: ${err.errmsg}`
-          );
-        });
-        const successful = products.length - insertErr.writeErrors.length;
+      if (mode === "replace") {
+        await Product.insertMany(products, { ordered: false });
         console.log(
-          `Successfully imported ${successful} products, ${insertErr.writeErrors.length} failed.`
+          `Write summary: inserted ${products.length} products (replace mode).`
         );
       } else {
-        console.error("Error inserting products:", insertErr);
+        const operations = products.map((product) => ({
+          updateOne: {
+            filter: { id: product.id },
+            update: { $set: product },
+            upsert: true,
+          },
+        }));
+        const result = await Product.bulkWrite(operations, { ordered: false });
+        console.log("Write summary (upsert mode):");
+        console.log(`- matched: ${result.matchedCount}`);
+        console.log(`- modified: ${result.modifiedCount}`);
+        console.log(`- upserted: ${result.upsertedCount}`);
       }
+    } catch (writeErr: any) {
+      if (writeErr.writeErrors) {
+        console.error(`Write errors (${writeErr.writeErrors.length}):`);
+      } else {
+        console.error("Error writing products:", writeErr);
+      }
+      process.exit(1);
     }
 
     process.exit(0);
