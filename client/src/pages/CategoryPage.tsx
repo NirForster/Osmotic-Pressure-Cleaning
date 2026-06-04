@@ -54,14 +54,16 @@ const categorySEO: Record<
       "בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, ציוד ניקוי מקצועי, ציוד ניקוי תעשייתי, מכונות ניקוי תעשייתיות, professional cleaning equipment, industrial pressure washers, Ben Gigi",
   },
   "vacuum-cleaners": {
-    title: "שואבי אבק מקצועיים | Professional Vacuum Cleaners | בן גיגי | Ben Gigi",
+    title:
+      "שואבי אבק מקצועיים | Professional Vacuum Cleaners | בן גיגי | Ben Gigi",
     description:
       "שואבי אבק תעשייתיים מקצועיים לכל סוג פסולת. פתרונות ניקוי יעילים ומהירים. Professional industrial vacuum cleaners for all types of waste.",
     keywords:
       "בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, שואב אבק, שואבי אבק, שואב אבק תעשייתי, שואבי אבק מקצועיים, vacuum cleaner, industrial vacuum, professional vacuum, Ben Gigi",
   },
   "rm-brand": {
-    title: "מוצרי R+M ו-Mosmatic | R+M and Mosmatic Products | בן גיגי | Ben Gigi",
+    title:
+      "מוצרי R+M ו-Mosmatic | R+M and Mosmatic Products | בן גיגי | Ben Gigi",
     description:
       "מוצרי R+M ו-Mosmatic המובילים בתחום מכונות שטיפה וציוד ניקוי מקצועי. איכות שוויצרית מובילה. Leading R+M and Mosmatic products for pressure washing and professional cleaning equipment.",
     keywords:
@@ -168,7 +170,10 @@ const CategoryPage = () => {
   return (
     <Container maxWidth="xl" sx={{ py: { xs: 3, md: 6 } }}>
       <SEO
-        title={seoData?.title || `${category?.name || "Products"} | בן גיגי | Ben Gigi`}
+        title={
+          seoData?.title ||
+          `${category?.name || "Products"} | בן גיגי | Ben Gigi`
+        }
         description={
           seoData?.description ||
           category?.description ||

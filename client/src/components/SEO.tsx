@@ -18,9 +18,10 @@ const SEO = ({
   type = "website",
 }: SEOProps) => {
   // Ensure both Hebrew and English company name appear in title
-  const fullTitle = title.includes("Ben Gigi") || title.includes("בן גיגי") 
-    ? title 
-    : `${title} | בן גיגי | Ben Gigi`;
+  const fullTitle =
+    title.includes("Ben Gigi") || title.includes("בן גיגי")
+      ? title
+      : `${title} | בן גיגי | Ben Gigi`;
 
   useEffect(() => {
     // Update document title

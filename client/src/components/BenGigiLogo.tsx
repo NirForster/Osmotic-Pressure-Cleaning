@@ -28,4 +28,3 @@ export default function BenGigiLogo({ size = 40 }: BenGigiLogoProps) {
     </Box>
   );
 }
-

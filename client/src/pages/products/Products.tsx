@@ -49,23 +49,24 @@ const ProductsPage = () => {
 
       {/* Categories Grid */}
       <Grid container columns={12} spacing={{ xs: 2, md: 3 }}>
-        {productCategories.map((category: typeof productCategories[0], index: number) => (
-          <Grid
-            key={category.id}
-            columns={12}
-            sx={{
-              width: { xs: "100%", sm: "50%", md: "33.33%" },
-              display: "flex",
-            }}
-          >
-            <Card
+        {productCategories.map(
+          (category: (typeof productCategories)[0], index: number) => (
+            <Grid
+              key={category.id}
+              columns={12}
               sx={{
-                height: { xs: 200, md: 240 },
-                cursor: "pointer",
-                position: "relative",
-                overflow: "hidden",
-                transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
-                background: `linear-gradient(135deg, 
+                width: { xs: "100%", sm: "50%", md: "33.33%" },
+                display: "flex",
+              }}
+            >
+              <Card
+                sx={{
+                  height: { xs: 200, md: 240 },
+                  cursor: "pointer",
+                  position: "relative",
+                  overflow: "hidden",
+                  transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+                  background: `linear-gradient(135deg, 
                   ${
                     index % 3 === 0
                       ? "#0ea5e9"
@@ -80,90 +81,91 @@ const ProductsPage = () => {
                       ? "#0891b2"
                       : "#0e7490"
                   } 100%)`,
-                color: "white",
-                "&:hover": {
-                  transform: "translateY(-8px) scale(1.02)",
-                  boxShadow: "0 20px 40px rgba(14, 165, 233, 0.3)",
-                },
-                "&:active": {
-                  transform: "translateY(-4px) scale(1.01)",
-                },
-              }}
-              onClick={() => navigate(`/products/${category.path}`)}
-            >
-              {/* Background Pattern */}
-              <Box
-                sx={{
-                  position: "absolute",
-                  top: 0,
-                  right: 0,
-                  width: "100%",
-                  height: "100%",
-                  opacity: 0.1,
-                  backgroundImage:
-                    "radial-gradient(circle at 20% 80%, white 2px, transparent 2px)",
-                  backgroundSize: "20px 20px",
+                  color: "white",
+                  "&:hover": {
+                    transform: "translateY(-8px) scale(1.02)",
+                    boxShadow: "0 20px 40px rgba(14, 165, 233, 0.3)",
+                  },
+                  "&:active": {
+                    transform: "translateY(-4px) scale(1.01)",
+                  },
                 }}
-              />
-
-              <CardContent
-                sx={{
-                  height: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  textAlign: "center",
-                  position: "relative",
-                  zIndex: 1,
-                  p: { xs: 2, md: 3 },
-                }}
+                onClick={() => navigate(`/products/${category.path}`)}
               >
-                {/* Icon */}
+                {/* Background Pattern */}
                 <Box
                   sx={{
-                    fontSize: { xs: "3rem", md: "4rem" },
-                    mb: { xs: 1, md: 2 },
+                    position: "absolute",
+                    top: 0,
+                    right: 0,
+                    width: "100%",
+                    height: "100%",
+                    opacity: 0.1,
+                    backgroundImage:
+                      "radial-gradient(circle at 20% 80%, white 2px, transparent 2px)",
+                    backgroundSize: "20px 20px",
+                  }}
+                />
+
+                <CardContent
+                  sx={{
+                    height: "100%",
                     display: "flex",
+                    flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
-                    color: "#0ea5e9",
-                    filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.2))",
+                    textAlign: "center",
+                    position: "relative",
+                    zIndex: 1,
+                    p: { xs: 2, md: 3 },
                   }}
                 >
-                  {category.icon}
-                </Box>
+                  {/* Icon */}
+                  <Box
+                    sx={{
+                      fontSize: { xs: "3rem", md: "4rem" },
+                      mb: { xs: 1, md: 2 },
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      color: "#0ea5e9",
+                      filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.2))",
+                    }}
+                  >
+                    {category.icon}
+                  </Box>
 
-                {/* Category Name */}
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontWeight: 700,
-                    mb: 1,
-                    fontSize: { xs: "1rem", md: "1.1rem" },
-                    lineHeight: 1.3,
-                    textShadow: "0 2px 4px rgba(0,0,0,0.2)",
-                  }}
-                >
-                  {category.name}
-                </Typography>
+                  {/* Category Name */}
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      fontWeight: 700,
+                      mb: 1,
+                      fontSize: { xs: "1rem", md: "1.1rem" },
+                      lineHeight: 1.3,
+                      textShadow: "0 2px 4px rgba(0,0,0,0.2)",
+                    }}
+                  >
+                    {category.name}
+                  </Typography>
 
-                {/* Description */}
-                <Typography
-                  variant="body2"
-                  sx={{
-                    opacity: 0.9,
-                    fontSize: { xs: "0.8rem", md: "0.85rem" },
-                    lineHeight: 1.4,
-                    textShadow: "0 1px 2px rgba(0,0,0,0.2)",
-                  }}
-                >
-                  {category.description}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
+                  {/* Description */}
+                  <Typography
+                    variant="body2"
+                    sx={{
+                      opacity: 0.9,
+                      fontSize: { xs: "0.8rem", md: "0.85rem" },
+                      lineHeight: 1.4,
+                      textShadow: "0 1px 2px rgba(0,0,0,0.2)",
+                    }}
+                  >
+                    {category.description}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          )
+        )}
       </Grid>
 
       {/* Call to Action Section */}

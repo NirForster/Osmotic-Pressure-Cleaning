@@ -4,7 +4,12 @@ import HomePage from "./pages/HomePage";
 import Articles from "./pages/Articles";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
-import { LocalCarWash, Sync, KeyboardTab, WaterDrop } from "@mui/icons-material";
+import {
+  LocalCarWash,
+  Sync,
+  KeyboardTab,
+  WaterDrop,
+} from "@mui/icons-material";
 
 // Simple product categories - no complex imports
 export const productCategories = [
