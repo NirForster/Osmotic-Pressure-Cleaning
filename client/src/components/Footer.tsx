@@ -17,6 +17,7 @@ import {
   Article as ArticleIcon,
 } from "@mui/icons-material";
 import { productCategories } from "../Router";
+import { WHATSAPP_URL } from "../config/siteConfig";
 
 const Footer = () => {
   const quickLinks = [
@@ -56,7 +57,7 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <WhatsAppIcon />,
-      href: "https://wa.me/972506362755",
+      href: WHATSAPP_URL,
       color: "#25D366",
     },
     {
@@ -378,7 +379,7 @@ const Footer = () => {
               {/* WhatsApp Button */}
               <Box
                 component="a"
-                href="https://wa.me/972506362755"
+                href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{

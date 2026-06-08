@@ -4,13 +4,9 @@ import {
   WhatsApp as WhatsAppIcon,
   Close as CloseIcon,
 } from "@mui/icons-material";
-import { WHATSAPP_NUMBER } from "../config/siteConfig";
+import { WHATSAPP_URL } from "../config/siteConfig";
 
 const POPUP_DELAY_MS = 5000;
-
-const WHATSAPP_CHAT_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-  "שלום, אשמח לקבל מידע"
-)}`;
 
 const WhatsAppPopup = () => {
   const [showWidget, setShowWidget] = useState(false);
@@ -30,7 +26,7 @@ const WhatsAppPopup = () => {
   };
 
   const handleOpenChat = () => {
-    window.open(WHATSAPP_CHAT_URL, "_blank", "noopener,noreferrer");
+    window.open(WHATSAPP_URL, "_blank", "noopener,noreferrer");
   };
 
   if (!showWidget) return null;
