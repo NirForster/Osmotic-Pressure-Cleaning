@@ -53,7 +53,7 @@ const HomePage = () => {
           sx={{ fontSize: { xs: "8rem", md: "12rem", lg: "15rem" } }}
         />
       ),
-      ctaText: "צפה במוצרים",
+      ctaText: "כל המוצרים",
       ctaAction: () => navigate("/products"),
       bgGradient: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
     },
@@ -69,7 +69,7 @@ const HomePage = () => {
         />
       ),
       ctaText: "מוצרי Mosmatic",
-      ctaAction: () => navigate("/products/rm-brand"),
+      ctaAction: () => navigate("/products"),
       bgGradient: "linear-gradient(135deg, #1e293b 0%, #334155 100%)",
     },
     {
@@ -139,7 +139,7 @@ const HomePage = () => {
       <SEO
         title="בן גיגי | Ben Gigi | ציוד ניקוי בלחץ מים | מכונות שטיפה מקצועיות | High-Pressure Cleaning Devices"
         description="בן גיגי (Ben Gigi) - יבואנית רשמית ובלעדית של Mosmatic AG ו-INTERPUMP בישראל. מובילים בתחום מכונות שטיפה בלחץ מים, אביזרים לשטיפת רכב, שואבי אבק מקצועיים וציוד ניקוי תעשייתי. איכות שוויצרית מובילה. High-pressure water cleaning devices for home and professional use."
-        keywords="בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, מכונת שטיפה, לחץ מים, ניקוי בלחץ, מכונת כביסה בלחץ, מכונת ניקוי בלחץ, Ben Gigi, Mosmatic, ציוד ניקוי מקצועי, אביזרים לשטיפת רכב, שואבי אבק, מחבר סיבובי, סביבל, pressure washer, high pressure cleaning, water pressure cleaner, power washer Israel, cleaning equipment"
+        keywords="בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, מכונת שטיפה, לחץ מים, ניקוי בלחץ, מכונת כביסה בלחץ, מכונת ניקוי בלחץ, Ben Gigi, Mosmatic, ציוד ניקוי מקצועי, אביזרים לשטיפת רכב, שואבי אבק, מחבר סיבובי, pressure washer, high pressure cleaning, water pressure cleaner, power washer Israel, cleaning equipment"
         url="https://ben-gigi.com/"
       />
       {/* Hero Video Section */}

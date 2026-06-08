@@ -55,7 +55,7 @@ async function runCategoryScraper(): Promise<ProductCategory[]> {
       ),
       connectors: result.data.filter(
         (c: ProductCategory) =>
-          c.name.includes("מחבר") || c.name.includes("סביבל")
+          c.name.includes("מחבר")
       ),
     };
 

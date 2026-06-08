@@ -1,23 +1,76 @@
-// pages/ProductsPage.tsx
+import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Container,
   Typography,
-  Grid,
   Card,
   CardContent,
+  CardMedia,
   Box,
-  Paper,
+  Chip,
 } from "@mui/material";
+import Loader from "../../components/Loader";
+import SEO from "../../components/SEO";
+import type { Product } from "../../services/api";
+import api from "../../services/api";
 import { productCategories } from "../../Router";
 
 const ProductsPage = () => {
   const navigate = useNavigate();
+  const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        setLoading(true);
+        const response = await api.getProducts({ limit: 200 });
+        setProducts(response.data);
+        setError(null);
+      } catch (err) {
+        setError("שגיאה בטעינת המוצרים");
+        console.error("Error fetching products:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  const filteredProducts = useMemo(() => {
+    if (!selectedCategory) return products;
+    return products.filter(
+      (product) => product.categoryName === selectedCategory
+    );
+  }, [products, selectedCategory]);
+
+  if (loading) {
+    return <Loader />;
+  }
+
+  if (error) {
+    return (
+      <Container maxWidth="lg" sx={{ py: 4 }}>
+        <Typography color="error" align="center">
+          {error}
+        </Typography>
+      </Container>
+    );
+  }
 
   return (
-    <Container maxWidth="lg" sx={{ py: { xs: 3, md: 6 } }}>
-      {/* Header Section */}
-      <Box sx={{ textAlign: "center", mb: { xs: 4, md: 6 } }}>
+    <Container maxWidth="xl" sx={{ py: { xs: 3, md: 6 } }}>
+      <SEO
+        title="כל המוצרים | Products | בן גיגי | Ben Gigi"
+        description="מגוון רחב של ציוד ניקוי מקצועי, מכונות שטיפה בלחץ מים, אביזרים ומוצרי Mosmatic. Browse our full catalog of professional cleaning equipment."
+        keywords="בן גיגי, מוצרי נקיון בלחץ מים, כל המוצרים, Mosmatic, Ben Gigi, pressure washing products"
+        url="https://ben-gigi.com/products"
+      />
+
+      <Box sx={{ textAlign: "center", mb: { xs: 3, md: 4 } }}>
         <Typography
           variant="h3"
           component="h1"
@@ -31,7 +84,7 @@ const ProductsPage = () => {
             fontSize: { xs: "2rem", md: "3rem" },
           }}
         >
-          המוצרים שלנו
+          כל המוצרים
         </Typography>
         <Typography
           variant="h6"
@@ -40,195 +93,139 @@ const ProductsPage = () => {
             maxWidth: 600,
             mx: "auto",
             lineHeight: 1.6,
-            fontSize: { xs: "1rem", md: "1.2rem" },
+            fontSize: { xs: "1rem", md: "1.1rem" },
           }}
         >
-          מגוון רחב של ציוד ניקוי מקצועי ואביזרים איכותיים לכל הצרכים שלכם
+          {selectedCategory
+            ? `${filteredProducts.length} מוצרים בקטגוריה "${selectedCategory}"`
+            : "מגוון רחב של ציוד ניקוי מקצועי ואביזרים איכותיים לכל הצרכים שלכם"}
         </Typography>
       </Box>
 
-      {/* Categories Grid */}
-      <Grid container columns={12} spacing={{ xs: 2, md: 3 }}>
-        {productCategories.map(
-          (category: (typeof productCategories)[0], index: number) => (
-            <Grid
-              key={category.id}
-              columns={12}
-              sx={{
-                width: { xs: "100%", sm: "50%", md: "33.33%" },
-                display: "flex",
-              }}
-            >
-              <Card
-                sx={{
-                  height: { xs: 200, md: 240 },
-                  cursor: "pointer",
-                  position: "relative",
-                  overflow: "hidden",
-                  transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
-                  background: `linear-gradient(135deg, 
-                  ${
-                    index % 3 === 0
-                      ? "#0ea5e9"
-                      : index % 3 === 1
-                      ? "#06b6d4"
-                      : "#0891b2"
-                  } 0%, 
-                  ${
-                    index % 3 === 0
-                      ? "#0284c7"
-                      : index % 3 === 1
-                      ? "#0891b2"
-                      : "#0e7490"
-                  } 100%)`,
-                  color: "white",
-                  "&:hover": {
-                    transform: "translateY(-8px) scale(1.02)",
-                    boxShadow: "0 20px 40px rgba(14, 165, 233, 0.3)",
-                  },
-                  "&:active": {
-                    transform: "translateY(-4px) scale(1.01)",
-                  },
-                }}
-                onClick={() => navigate(`/products/${category.path}`)}
-              >
-                {/* Background Pattern */}
-                <Box
-                  sx={{
-                    position: "absolute",
-                    top: 0,
-                    right: 0,
-                    width: "100%",
-                    height: "100%",
-                    opacity: 0.1,
-                    backgroundImage:
-                      "radial-gradient(circle at 20% 80%, white 2px, transparent 2px)",
-                    backgroundSize: "20px 20px",
-                  }}
-                />
-
-                <CardContent
-                  sx={{
-                    height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    textAlign: "center",
-                    position: "relative",
-                    zIndex: 1,
-                    p: { xs: 2, md: 3 },
-                  }}
-                >
-                  {/* Icon */}
-                  <Box
-                    sx={{
-                      fontSize: { xs: "3rem", md: "4rem" },
-                      mb: { xs: 1, md: 2 },
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#0ea5e9",
-                      filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.2))",
-                    }}
-                  >
-                    {category.icon}
-                  </Box>
-
-                  {/* Category Name */}
-                  <Typography
-                    variant="h6"
-                    sx={{
-                      fontWeight: 700,
-                      mb: 1,
-                      fontSize: { xs: "1rem", md: "1.1rem" },
-                      lineHeight: 1.3,
-                      textShadow: "0 2px 4px rgba(0,0,0,0.2)",
-                    }}
-                  >
-                    {category.name}
-                  </Typography>
-
-                  {/* Description */}
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      opacity: 0.9,
-                      fontSize: { xs: "0.8rem", md: "0.85rem" },
-                      lineHeight: 1.4,
-                      textShadow: "0 1px 2px rgba(0,0,0,0.2)",
-                    }}
-                  >
-                    {category.description}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-          )
-        )}
-      </Grid>
-
-      {/* Call to Action Section */}
-      <Paper
-        elevation={0}
+      <Box
         sx={{
-          mt: { xs: 4, md: 8 },
-          p: { xs: 3, md: 4 },
-          textAlign: "center",
-          background: "linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)",
-          borderRadius: 3,
-          border: "1px solid #e2e8f0",
+          display: "flex",
+          flexWrap: "wrap",
+          gap: 1,
+          justifyContent: "center",
+          mb: { xs: 3, md: 5 },
         }}
       >
-        <Typography
-          variant="h5"
-          gutterBottom
-          sx={{
-            fontWeight: 700,
-            color: "#1e293b",
-            mb: 2,
-          }}
-        >
-          לא מצאתם מה שחיפשתם?
-        </Typography>
-        <Typography
-          variant="body1"
-          color="text.secondary"
-          sx={{
-            mb: 3,
-            maxWidth: 500,
-            mx: "auto",
-            lineHeight: 1.6,
-          }}
-        >
-          צרו קשר איתנו ונעזור לכם למצוא בדיוק את הציוד שאתם צריכים
-        </Typography>
+        <Chip
+          label="הכל"
+          clickable
+          color={selectedCategory === null ? "primary" : "default"}
+          variant={selectedCategory === null ? "filled" : "outlined"}
+          onClick={() => setSelectedCategory(null)}
+          sx={{ fontWeight: 600 }}
+        />
+        {productCategories.map((category) => (
+          <Chip
+            key={category.id}
+            label={category.name}
+            clickable
+            color={
+              selectedCategory === category.name ? "primary" : "default"
+            }
+            variant={
+              selectedCategory === category.name ? "filled" : "outlined"
+            }
+            onClick={() =>
+              setSelectedCategory(
+                selectedCategory === category.name ? null : category.name
+              )
+            }
+            sx={{ fontWeight: 500 }}
+          />
+        ))}
+      </Box>
+
+      {filteredProducts.length === 0 ? (
+        <Box sx={{ textAlign: "center", py: 8 }}>
+          <Typography variant="h6" color="text.secondary">
+            לא נמצאו מוצרים בקטגוריה זו
+          </Typography>
+        </Box>
+      ) : (
         <Box
           sx={{
-            display: "flex",
-            justifyContent: "center",
+            display: "grid",
+            gridTemplateColumns: {
+              xs: "1fr",
+              sm: "repeat(2, 1fr)",
+              md: "repeat(3, 1fr)",
+            },
             gap: 2,
-            flexWrap: "wrap",
           }}
         >
-          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-            <Typography
-              variant="body2"
-              sx={{ fontWeight: 600, color: "#475569" }}
+          {filteredProducts.map((product) => (
+            <Card
+              key={product.id}
+              sx={{
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                transition: "transform 0.2s",
+                cursor: "pointer",
+                "&:hover": {
+                  transform: "translateY(-4px)",
+                },
+              }}
+              onClick={() => navigate(`/product/${product.id}`)}
             >
-              📞 0506362755
-            </Typography>
-          </Box>
-          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-            <Typography
-              variant="body2"
-              sx={{ fontWeight: 600, color: "#475569" }}
-            >
-              ✉️ info@bengigi.co.il
-            </Typography>
-          </Box>
+              <CardMedia
+                component="img"
+                height="200"
+                image={product.previewImage}
+                alt={product.name}
+                sx={{ objectFit: "contain", p: 2 }}
+              />
+              <CardContent sx={{ flexGrow: 1 }}>
+                <Chip
+                  label={product.categoryName}
+                  size="small"
+                  sx={{ mb: 1 }}
+                />
+                <Typography
+                  gutterBottom
+                  variant="h6"
+                  component="h2"
+                  sx={{
+                    fontWeight: 600,
+                    fontSize: { xs: "1rem", md: "1.1rem" },
+                  }}
+                >
+                  {product.name}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{
+                    mb: 2,
+                    fontSize: { xs: "0.875rem", md: "1rem" },
+                    display: "-webkit-box",
+                    WebkitLineClamp: 3,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                  }}
+                >
+                  {product.description}
+                </Typography>
+                {product.sku && (
+                  <Typography
+                    variant="caption"
+                    color="text.secondary"
+                    sx={{ display: "block" }}
+                  >
+                    SKU: {product.sku}
+                  </Typography>
+                )}
+              </CardContent>
+            </Card>
+          ))}
         </Box>
-      </Paper>
+      )}
     </Container>
   );
 };

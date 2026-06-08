@@ -6,6 +6,7 @@ import ImageCarousel from "../components/ImageCarousel";
 import api from "../services/api";
 import type { Product } from "../services/api";
 import SEO from "../components/SEO";
+import AddToCartButton from "../components/AddToCartButton";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -185,6 +186,8 @@ const ProductPage = () => {
               </Box>
             </Box>
           )}
+          <AddToCartButton product={product} fullWidth />
+
           {(product.pdfUrl || product.videoUrl) && (
             <Box sx={{ mt: 3, pt: 2, borderTop: "1px solid #e2e8f0" }}>
               <Typography

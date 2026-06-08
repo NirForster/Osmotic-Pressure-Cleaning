@@ -54,6 +54,7 @@ const api = {
   // Get products with optional filtering
   async getProducts(params?: {
     category?: string;
+    categoryId?: string;
     search?: string;
     limit?: number;
     page?: number;

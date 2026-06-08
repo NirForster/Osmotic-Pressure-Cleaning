@@ -260,7 +260,6 @@ class CategoryScraper {
       "שואב",
       "אבק",
       "מחבר",
-      "סביבל",
       "R+M",
       "לחץ",
     ];
@@ -274,7 +273,7 @@ class CategoryScraper {
     if (name.includes("מקצועי")) return "professional";
     if (name.includes("שואב")) return "vacuum";
     if (name.includes("R+M")) return "brand";
-    if (name.includes("מחבר") || name.includes("סביבל")) return "connectors";
+    if (name.includes("מחבר")) return "connectors";
     return "other";
   }
 

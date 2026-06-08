@@ -16,6 +16,7 @@ import {
   useTheme,
   useMediaQuery,
   Collapse,
+  Badge,
 } from "@mui/material";
 import {
   Menu as MenuIcon,
@@ -27,8 +28,10 @@ import {
   ExpandMore,
   Phone as PhoneIcon,
   Email as EmailIcon,
+  ShoppingCart as ShoppingCartIcon,
 } from "@mui/icons-material";
 import { productCategories } from "../Router";
+import { useCart } from "../context/CartContext";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -36,6 +39,7 @@ const Navbar = () => {
   const location = useLocation();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const { itemCount, openCart } = useCart();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -157,6 +161,43 @@ const Navbar = () => {
             {item.hasSubmenu && (
               <Collapse in={productsOpen} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding sx={{ mb: 1 }}>
+                  <ListItem
+                    component={Link}
+                    to="/products"
+                    onClick={handleDrawerToggle}
+                    sx={{
+                      pl: 4,
+                      pr: 2,
+                      borderRadius: 3,
+                      mb: 0.5,
+                      minHeight: 48,
+                      backgroundColor: isActive("/products")
+                        ? "#0ea5e9"
+                        : "transparent",
+                      color: isActive("/products") ? "white" : "#374151",
+                      "&:hover": {
+                        backgroundColor: isActive("/products")
+                          ? "#0284c7"
+                          : "#f9fafb",
+                      },
+                      cursor: "pointer",
+                      transition: "all 0.3s ease",
+                    }}
+                  >
+                    <Box sx={{ mr: 1.5, display: "flex", alignItems: "center" }}>
+                      <ProductsIcon sx={{ fontSize: "1.3rem" }} />
+                    </Box>
+                    <ListItemText
+                      primary="כל המוצרים"
+                      sx={{
+                        "& .MuiTypography-root": {
+                          fontSize: "0.95rem",
+                          fontWeight: 600,
+                          lineHeight: 1.3,
+                        },
+                      }}
+                    />
+                  </ListItem>
                   {productCategories.map((category) => (
                     <ListItem
                       key={category.path}
@@ -382,6 +423,31 @@ const Navbar = () => {
                         zIndex: 1000,
                       }}
                     >
+                      <Box
+                        component={Link}
+                        to="/products"
+                        onClick={() => setProductsOpen(false)}
+                        sx={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 1.5,
+                          p: 2,
+                          textDecoration: "none",
+                          color: isActive("/products") ? "#0ea5e9" : "#374151",
+                          borderBottom: "1px solid #e5e7eb",
+                          backgroundColor: isActive("/products")
+                            ? "#eff6ff"
+                            : "transparent",
+                          "&:hover": {
+                            backgroundColor: "#f9fafb",
+                          },
+                        }}
+                      >
+                        <ProductsIcon sx={{ fontSize: "1.4rem" }} />
+                        <Typography sx={{ fontSize: "0.9rem", fontWeight: 600 }}>
+                          כל המוצרים
+                        </Typography>
+                      </Box>
                       {productCategories.map((category) => (
                         <Box
                           key={category.path}
@@ -421,6 +487,19 @@ const Navbar = () => {
 
           {/* Right Side */}
           <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+            <IconButton
+              onClick={openCart}
+              aria-label="פתח עגלת קניות"
+              sx={{
+                color: "#6b7280",
+                "&:hover": { backgroundColor: "#f3f4f6" },
+              }}
+            >
+              <Badge badgeContent={itemCount} color="primary" max={99}>
+                <ShoppingCartIcon />
+              </Badge>
+            </IconButton>
+
             {/* Mosmatic Logo - Desktop Only */}
             {!isMobile && (
               <Box

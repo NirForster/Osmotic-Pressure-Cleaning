@@ -32,11 +32,11 @@ const categorySEO: Record<
       "בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, אביזרים לשטיפת רכב, אביזרי שטיפת רכב, ציוד שטיפת רכב, Ben Gigi, car wash accessories, car cleaning accessories, pressure washer accessories",
   },
   "swivel-connectors": {
-    title: "מחבר סיבובי - סביבל | Swivel Connectors | בן גיגי | Ben Gigi",
+    title: "מחבר סיבובי | Swivel Connectors | בן גיגי | Ben Gigi",
     description:
       "מחברים סיבוביים מקצועיים למכונות שטיפה בלחץ מים. איכות שוויצרית מובילה מ-Mosmatic. Professional swivel connectors for pressure washing equipment.",
     keywords:
-      "בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, מחבר סיבובי, סביבל, מחבר סביבוני, swivel connector, swivel joint, pressure washer swivel, Ben Gigi, Mosmatic",
+      "בן גיגי, מוצרי נקיון בלחץ מים, שטיפה, מחבר סיבובי, swivel connector, swivel joint, pressure washer swivel, Ben Gigi, Mosmatic",
   },
   "pressure-washers": {
     title: "מכונות שטיפה בלחץ מים | Pressure Washers | בן גיגי | Ben Gigi",
@@ -77,7 +77,7 @@ const categoryDescriptions: Record<string, string> = {
 
 כל האביזרים שלנו מותאמים לעבודה עם מכונות שטיפה מקצועיות ונבדקים לאיכות גבוהה ואמינות. בין אם אתם מחפשים אביזרים לשטיפת רכבים פרטיים, משאיות, או ציוד כבד, תמצאו אצלנו את הפתרון המתאים. האיכות הגבוהה של האביזרים מבטיחה עבודה יעילה וחסכונית במים, תוך שמירה על איכות הניקוי הגבוהה ביותר.`,
 
-  "swivel-connectors": `מחברים סיבוביים (סביבלים) הם רכיבים קריטיים במערכת שטיפה בלחץ מים, המאפשרים תנועה חופשית וחוסר סיבוב של הצינורות בזמן העבודה. ב-Ben Gigi אנו מייבאים מחברים סיבוביים איכותיים מ-Mosmatic השוויצרית, המובילה העולמית בתחום.
+  "swivel-connectors": `מחברים סיבוביים הם רכיבים קריטיים במערכת שטיפה בלחץ מים, המאפשרים תנועה חופשית וחוסר סיבוב של הצינורות בזמן העבודה. ב-Ben Gigi אנו מייבאים מחברים סיבוביים איכותיים מ-Mosmatic השוויצרית, המובילה העולמית בתחום.
 
 המחברים הסיבוביים שלנו בנויים לעמוד בלחצים גבוהים ובשימוש אינטנסיבי. הם מציעים ביצועים מעולים, אורך חיים ארוך, ותחזוקה מינימלית. המחברים מתאימים לכל סוגי מכונות השטיפה ומבטיחים עבודה נוחה ויעילה ללא סיבוב או כריכה של הצינורות.
 
@@ -119,21 +119,18 @@ const CategoryPage = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const categoryName = pathToCategoryName(categoryPath);
-        console.log(
-          "categoryPath:",
-          categoryPath,
-          "=> categoryName:",
-          categoryName
+        const category = productCategories.find(
+          (cat) => cat.path === categoryPath
         );
-        if (!categoryName) {
+        if (!category) {
           setProducts([]);
           setError("קטגוריה לא נמצאה");
           setLoading(false);
           return;
         }
-        const response = await api.getProducts({ category: categoryName });
-        console.log("API response:", response.data);
+        const response = await api.getProducts({
+          categoryId: category.categoryDbId,
+        });
         setProducts(response.data);
         setError(null);
       } catch (err) {

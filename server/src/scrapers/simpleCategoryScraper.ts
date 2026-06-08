@@ -120,8 +120,7 @@ async function extractCategories() {
               text.includes("ניקוי") ||
               text.includes("שואב") ||
               text.includes("R+M") ||
-              text.includes("מחבר") ||
-              text.includes("סביבל")
+              text.includes("מחבר")
             ) {
               results.push({
                 name: text,
@@ -170,8 +169,7 @@ async function extractCategories() {
             text.includes("ניקוי") ||
             text.includes("שואב") ||
             text.includes("R+M") ||
-            text.includes("מחבר") ||
-            text.includes("סביבל")
+            text.includes("מחבר")
           ) {
             results.push({
               name: text,

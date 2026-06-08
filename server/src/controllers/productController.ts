@@ -5,11 +5,13 @@ export const productController = {
   // Get all products with optional filtering
   async getProducts(req: Request, res: Response) {
     try {
-      const { category, search, limit = "50", page = "1" } = req.query;
+      const { category, categoryId, search, limit = "50", page = "1" } =
+        req.query;
       const query: any = {};
 
-      // Add category filter if provided
-      if (category) {
+      if (categoryId) {
+        query.categoryId = categoryId;
+      } else if (category) {
         query.categoryName = category;
       }
 

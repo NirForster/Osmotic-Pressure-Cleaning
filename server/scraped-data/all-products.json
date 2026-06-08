@@ -412,7 +412,10 @@
       "pdfUrl": "https://www.mosmatic.com/downloads/catalog/ME25/#page=40",
       "videoUrl": "https://www.youtube.com/playlist?list=PLGSsxj0c_vrCQACzAvFc-FxiBEKdBEfhJ",
       "subHeader": "",
-      "bulletPoints": ["מעוצב בצורה ארגונומית", "פעולת הרפיה אופציונלית"]
+      "bulletPoints": [
+        "מעוצב בצורה ארגונומית",
+        "פעולת הרפיה אופציונלית"
+      ]
     },
     {
       "name": "מוטות (HP (HP-Lances",
@@ -464,7 +467,11 @@
       "pdfUrl": "https://www.mosmatic.com/downloads/catalog/ME25/#page=28",
       "videoUrl": "https://www.youtube.com/watch?v=YabKRQ48m_4",
       "subHeader": "",
-      "bulletPoints": ["שערות חזיר טבעי", "עיצוב קשיח", "מגיע מוכן להתקנה"]
+      "bulletPoints": [
+        "שערות חזיר טבעי",
+        "עיצוב קשיח",
+        "מגיע מוכן להתקנה"
+      ]
     },
     {
       "name": "מוצרי קצף אקדח, וסת, ראש (Foam Products)",
@@ -593,7 +600,11 @@
       "pdfUrl": "https://www.mosmatic.com/downloads/catalog/ME25/#page=38",
       "videoUrl": "https://www.youtube.com/watch?v=JbATyYSuH9s",
       "subHeader": "Ramp, Rigger, WBP, Stand, Extension, Collision protection",
-      "bulletPoints": ["מנקה תחתי נייד", "חיבור קל ומהיר", "רק 120 מ\"מ גובה"]
+      "bulletPoints": [
+        "מנקה תחתי נייד",
+        "חיבור קל ומהיר",
+        "רק 120 מ\"מ גובה"
+      ]
     },
     {
       "name": "מגן מפני מים (Splash Guard)",
@@ -704,10 +715,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179435",
       "id": "1179435",
       "sku": "",
-      "images": ["Cat_456349_30.jpg"],
+      "images": [
+        "Cat_456349_30.jpg"
+      ],
       "previewImage": "Cat_456349_30.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -723,10 +736,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179434",
       "id": "1179434",
       "sku": "",
-      "images": ["Cat_456349_29.jpg"],
+      "images": [
+        "Cat_456349_29.jpg"
+      ],
       "previewImage": "Cat_456349_29.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "https://www.mosmatic.com/downloads/catalog/MA24/#page=75",
@@ -742,10 +757,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179433",
       "id": "1179433",
       "sku": "",
-      "images": ["Cat_456349_28.jpg"],
+      "images": [
+        "Cat_456349_28.jpg"
+      ],
       "previewImage": "Cat_456349_28.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -761,10 +778,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179432",
       "id": "1179432",
       "sku": "",
-      "images": ["Cat_456349_27.jpg"],
+      "images": [
+        "Cat_456349_27.jpg"
+      ],
       "previewImage": "Cat_456349_27.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "https://www.mosmatic.com/downloads/catalog/MA24/#page=73",
@@ -780,10 +799,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179431",
       "id": "1179431",
       "sku": "",
-      "images": ["Cat_456349_26.jpg"],
+      "images": [
+        "Cat_456349_26.jpg"
+      ],
       "previewImage": "Cat_456349_26.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -795,14 +816,16 @@
       ]
     },
     {
-      "name": "מחבר סיבובי - סביבל DGK",
+      "name": "מחבר סיבובי DGK",
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179427",
       "id": "1179427",
       "sku": "",
-      "images": ["Cat_456349_22.jpg"],
+      "images": [
+        "Cat_456349_22.jpg"
+      ],
       "previewImage": "Cat_456349_22.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "https://www.mosmatic.com/downloads/catalog/MA24/#page=70",
@@ -818,10 +841,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179429",
       "id": "1179429",
       "sku": "",
-      "images": ["Cat_456349_24.jpg"],
+      "images": [
+        "Cat_456349_24.jpg"
+      ],
       "previewImage": "Cat_456349_24.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "https://www.mosmatic.com/downloads/catalog/MA24/#page=69",
@@ -837,10 +862,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179428",
       "id": "1179428",
       "sku": "",
-      "images": ["Cat_456349_23.jpg"],
+      "images": [
+        "Cat_456349_23.jpg"
+      ],
       "previewImage": "Cat_456349_23.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -856,10 +883,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183526",
       "id": "1183526",
       "sku": "",
-      "images": ["Cat_456349_63.jpg"],
+      "images": [
+        "Cat_456349_63.jpg"
+      ],
       "previewImage": "Cat_456349_63.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "מבנה פלדת אל חלד מלא מערכת מיסב זוגי עיצוב קשיח יישומים: מערכות שטיפה אוטומטיות, יישומים תעשייתיים, סלילי צינור בלחץ גבוה, זרם גבוה. כמות גבוהה של סיבובים לדקה",
       "pdfUrl": "",
       "videoUrl": "",
@@ -871,10 +900,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183525",
       "id": "1183525",
       "sku": "",
-      "images": ["Cat_456349_62.jpg"],
+      "images": [
+        "Cat_456349_62.jpg"
+      ],
       "previewImage": "Cat_456349_62.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -886,10 +917,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183524",
       "id": "1183524",
       "sku": "",
-      "images": ["Cat_456349_61.jpg"],
+      "images": [
+        "Cat_456349_61.jpg"
+      ],
       "previewImage": "Cat_456349_61.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -901,25 +934,33 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183523",
       "id": "1183523",
       "sku": "",
-      "images": ["Cat_456349_391.jpg"],
+      "images": [
+        "Cat_456349_391.jpg"
+      ],
       "previewImage": "Cat_456349_391.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "https://www.mosmatic.com/downloads/catalog/MA24/#page=77",
       "subHeader": "",
-      "bulletPoints": ["מייסב הזזה", "פלדת אל חלד", "ללא צורך בתחזוקה"]
+      "bulletPoints": [
+        "מייסב הזזה",
+        "פלדת אל חלד",
+        "ללא צורך בתחזוקה"
+      ]
     },
     {
       "name": "מחבר סיבובי WDB",
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183522",
       "id": "1183522",
       "sku": "",
-      "images": ["Cat_456349_59.jpg"],
+      "images": [
+        "Cat_456349_59.jpg"
+      ],
       "previewImage": "Cat_456349_59.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -931,10 +972,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183535",
       "id": "1183535",
       "sku": "",
-      "images": ["Cat_456349_72.jpg"],
+      "images": [
+        "Cat_456349_72.jpg"
+      ],
       "previewImage": "Cat_456349_72.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אזהרת כשלון איטום באמצעות חורי טפטוף מיסבים אטומים מפלדת אל חלד יישומים: זרם גבוה, כוח דחיפה ורדיאלי, יישומי סיבוב עצמי, ניקוי משטחים, חלקים לניקוי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -946,10 +989,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183536",
       "id": "1183536",
       "sku": "",
-      "images": ["Cat_456349_73.jpg"],
+      "images": [
+        "Cat_456349_73.jpg"
+      ],
       "previewImage": "Cat_456349_73.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אוגן להתקנה מהירה מערכת איטום לתרכובות עם פחמן יישומים: ניקויי משטחים, חלקים לניקוי, ניקוי צמיגים, מהירות סיבוב לדקה גבוהה, יישומי סיבוב עצמי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -961,10 +1006,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183517",
       "id": "1183517",
       "sku": "",
-      "images": ["Cat_456349_54.jpg"],
+      "images": [
+        "Cat_456349_54.jpg"
+      ],
       "previewImage": "Cat_456349_54.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "איכות ודיוק גבוהים ביותר עמידות לקורוזיה יישומים: ניקויי משטחים, חלקים לניקוי, ניקוי צמיגים, מהירות סיבוב לדקה גבוהה, יישומי סיבוב עצמי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -976,10 +1023,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183519",
       "id": "1183519",
       "sku": "",
-      "images": ["Cat_456349_56.jpg"],
+      "images": [
+        "Cat_456349_56.jpg"
+      ],
       "previewImage": "Cat_456349_56.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אזהרת כשלון איטום באמצעות חורי טפטוף מערכת איטום לתרכובות עם פחמן יישומים: טכנולוגית ניקוי בלחץ גבוה, חלקים לניקוי, ניקוי צמיגים, לחץ גבוה",
       "pdfUrl": "",
       "videoUrl": "",
@@ -991,10 +1040,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183534",
       "id": "1183534",
       "sku": "",
-      "images": ["Cat_456349_71.jpg"],
+      "images": [
+        "Cat_456349_71.jpg"
+      ],
       "previewImage": "Cat_456349_71.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "חיבור צידי ללכידת טפטופים מבנה פלדת אל חלד מלא יישומים: מהירות סיבוב לדקה גבוהה, לחץ גבוה, יישומי סיבוב עצמי, חלקים לניקוי, ניקוי צמיגים, טכנולוגית ניקוי HP",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1006,10 +1057,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183530",
       "id": "1183530",
       "sku": "",
-      "images": ["Cat_456349_67.jpg"],
+      "images": [
+        "Cat_456349_67.jpg"
+      ],
       "previewImage": "Cat_456349_67.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אזהרת כשלון איטום באמצעות חורי טפטוף איטום קרמי יישומים: ניקויי משטחים, חלקים לניקוי, ניקוי צמיגים, מהירות סיבוב לדקה גבוהה, יישומי סיבוב עצמי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1021,10 +1074,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183531",
       "id": "1183531",
       "sku": "",
-      "images": ["Cat_456349_68.jpg"],
+      "images": [
+        "Cat_456349_68.jpg"
+      ],
       "previewImage": "Cat_456349_68.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אוגן להתקנה קלה עמידות לקורוזיה יישומים: ניקויי משטחים, חלקים לניקוי, ניקוי צמיגים, מהירות סיבוב לדקה גבוהה, יישומי סיבוב עצמי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1036,10 +1091,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183533",
       "id": "1183533",
       "sku": "",
-      "images": ["Cat_456349_70.jpg"],
+      "images": [
+        "Cat_456349_70.jpg"
+      ],
       "previewImage": "Cat_456349_70.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "מהירות גבוהה, מערכת מיסב משולשת אוגן להתקנה קלה יישומים: ניקוי בקיטור, יישומי סיבוב עצמי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1051,10 +1108,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183532",
       "id": "1183532",
       "sku": "",
-      "images": ["Cat_456349_69.jpg"],
+      "images": [
+        "Cat_456349_69.jpg"
+      ],
       "previewImage": "Cat_456349_69.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אזהרת כשלון איטום באמצעות חורי טפטוף פלדת אל חלד יישומים: נקודת ניקוי בלחץ גבוה, חלקים לניקוי, ניקוי צמיגים, מהירות סיבוב לדקה גבוהה.",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1066,10 +1125,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183527",
       "id": "1183527",
       "sku": "",
-      "images": ["Cat_456349_64.jpg"],
+      "images": [
+        "Cat_456349_64.jpg"
+      ],
       "previewImage": "Cat_456349_64.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אוגן להתקנה קלה ללא צורך בתחזוקה יישומים: טכנולוגית ניקוי בלחץ גבוה, חלקים לניקוי, ניקוי צמיגים, יישומי סיבוב עצמי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1081,10 +1142,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183528",
       "id": "1183528",
       "sku": "",
-      "images": ["Cat_456349_65.jpg"],
+      "images": [
+        "Cat_456349_65.jpg"
+      ],
       "previewImage": "Cat_456349_65.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "מחיצה המתאימה להרכבה איכות ודיוק גבוהים יישומים: טכנולוגית ניקוי בלחץ גבוה, חלקים לניקוי, ניקוי צמיגים, יישומי סיבוב עצמי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1096,10 +1159,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183529",
       "id": "1183529",
       "sku": "",
-      "images": ["Cat_456349_66.jpg"],
+      "images": [
+        "Cat_456349_66.jpg"
+      ],
       "previewImage": "Cat_456349_66.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "מערכת מיסב משולשת במהירות גבוהה אורך חיים ארוך יישומים: כוח דחיפה ורדיאלי, זרם גבוה, מערכות שטיפה אוטומטית, סלילי צינור בלחץ גבוה",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1111,10 +1176,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183521",
       "id": "1183521",
       "sku": "",
-      "images": ["Cat_456349_58.jpg"],
+      "images": [
+        "Cat_456349_58.jpg"
+      ],
       "previewImage": "Cat_456349_58.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אוגן להתקנה מהירה מיסבים אטומים מפלדת אל חלד יישומים: מהירות סיבוב לדקה גבוהה, לחץ גבוה, יישומי סיבוב עצמי, מנקי תקרה, חלקים לניקוי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1126,10 +1193,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183520",
       "id": "1183520",
       "sku": "",
-      "images": ["Cat_456349_57.jpg"],
+      "images": [
+        "Cat_456349_57.jpg"
+      ],
       "previewImage": "Cat_456349_57.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "מיסבים אטומים מפלדת אל חלד אזהרת כשלון איטום באמצעות חורי טפטוף. יישומים: לחץ גבוה/מהירות סיבוב לדקה, כוח דחיפה ורדיקלי, יישומי סיבוב עצמי, ניקוי משטחים, חלקים לניקוי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1141,10 +1210,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183518",
       "id": "1183518",
       "sku": "",
-      "images": ["Cat_456349_55.jpg"],
+      "images": [
+        "Cat_456349_55.jpg"
+      ],
       "previewImage": "Cat_456349_55.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "מערכת מיסבים פי ארבעה מערכת איטום לתרכובות פחמן יישומים:  יישומים מתחת למים (מי מלח, מים מתוקים), לחץ גבוה/מהירות סיבוב לדקה, כוח דחיפה ורדיקלי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1156,10 +1227,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=2556021",
       "id": "2556021",
       "sku": "",
-      "images": ["Cat_456349_393.jpg"],
+      "images": [
+        "Cat_456349_393.jpg"
+      ],
       "previewImage": "Cat_456349_393.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1171,10 +1244,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=2556020",
       "id": "2556020",
       "sku": "",
-      "images": ["Cat_456349_392.jpg"],
+      "images": [
+        "Cat_456349_392.jpg"
+      ],
       "previewImage": "Cat_456349_392.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1186,10 +1261,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183535",
       "id": "1183535",
       "sku": "",
-      "images": ["Cat_456349_72.jpg"],
+      "images": [
+        "Cat_456349_72.jpg"
+      ],
       "previewImage": "Cat_456349_72.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אזהרת כשלון איטום באמצעות חורי טפטוף מיסבים אטומים מפלדת אל חלד יישומים: זרם גבוה, כוח דחיפה ורדיאלי, יישומי סיבוב עצמי, ניקוי משטחים, חלקים לניקוי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1201,10 +1278,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183536",
       "id": "1183536",
       "sku": "",
-      "images": ["Cat_456349_73.jpg"],
+      "images": [
+        "Cat_456349_73.jpg"
+      ],
       "previewImage": "Cat_456349_73.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אוגן להתקנה מהירה מערכת איטום לתרכובות עם פחמן יישומים: ניקויי משטחים, חלקים לניקוי, ניקוי צמיגים, מהירות סיבוב לדקה גבוהה, יישומי סיבוב עצמי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1216,10 +1295,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183517",
       "id": "1183517",
       "sku": "",
-      "images": ["Cat_456349_54.jpg"],
+      "images": [
+        "Cat_456349_54.jpg"
+      ],
       "previewImage": "Cat_456349_54.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "איכות ודיוק גבוהים ביותר עמידות לקורוזיה יישומים: ניקויי משטחים, חלקים לניקוי, ניקוי צמיגים, מהירות סיבוב לדקה גבוהה, יישומי סיבוב עצמי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1231,10 +1312,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183519",
       "id": "1183519",
       "sku": "",
-      "images": ["Cat_456349_56.jpg"],
+      "images": [
+        "Cat_456349_56.jpg"
+      ],
       "previewImage": "Cat_456349_56.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אזהרת כשלון איטום באמצעות חורי טפטוף מערכת איטום לתרכובות עם פחמן יישומים: טכנולוגית ניקוי בלחץ גבוה, חלקים לניקוי, ניקוי צמיגים, לחץ גבוה",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1246,10 +1329,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183534",
       "id": "1183534",
       "sku": "",
-      "images": ["Cat_456349_71.jpg"],
+      "images": [
+        "Cat_456349_71.jpg"
+      ],
       "previewImage": "Cat_456349_71.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "חיבור צידי ללכידת טפטופים מבנה פלדת אל חלד מלא יישומים: מהירות סיבוב לדקה גבוהה, לחץ גבוה, יישומי סיבוב עצמי, חלקים לניקוי, ניקוי צמיגים, טכנולוגית ניקוי HP",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1261,10 +1346,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183530",
       "id": "1183530",
       "sku": "",
-      "images": ["Cat_456349_67.jpg"],
+      "images": [
+        "Cat_456349_67.jpg"
+      ],
       "previewImage": "Cat_456349_67.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אזהרת כשלון איטום באמצעות חורי טפטוף איטום קרמי יישומים: ניקויי משטחים, חלקים לניקוי, ניקוי צמיגים, מהירות סיבוב לדקה גבוהה, יישומי סיבוב עצמי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1276,10 +1363,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183531",
       "id": "1183531",
       "sku": "",
-      "images": ["Cat_456349_68.jpg"],
+      "images": [
+        "Cat_456349_68.jpg"
+      ],
       "previewImage": "Cat_456349_68.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אוגן להתקנה קלה עמידות לקורוזיה יישומים: ניקויי משטחים, חלקים לניקוי, ניקוי צמיגים, מהירות סיבוב לדקה גבוהה, יישומי סיבוב עצמי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1291,10 +1380,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183533",
       "id": "1183533",
       "sku": "",
-      "images": ["Cat_456349_70.jpg"],
+      "images": [
+        "Cat_456349_70.jpg"
+      ],
       "previewImage": "Cat_456349_70.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "מהירות גבוהה, מערכת מיסב משולשת אוגן להתקנה קלה יישומים: ניקוי בקיטור, יישומי סיבוב עצמי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1306,10 +1397,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183532",
       "id": "1183532",
       "sku": "",
-      "images": ["Cat_456349_69.jpg"],
+      "images": [
+        "Cat_456349_69.jpg"
+      ],
       "previewImage": "Cat_456349_69.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אזהרת כשלון איטום באמצעות חורי טפטוף פלדת אל חלד יישומים: נקודת ניקוי בלחץ גבוה, חלקים לניקוי, ניקוי צמיגים, מהירות סיבוב לדקה גבוהה.",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1321,10 +1414,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183527",
       "id": "1183527",
       "sku": "",
-      "images": ["Cat_456349_64.jpg"],
+      "images": [
+        "Cat_456349_64.jpg"
+      ],
       "previewImage": "Cat_456349_64.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אוגן להתקנה קלה ללא צורך בתחזוקה יישומים: טכנולוגית ניקוי בלחץ גבוה, חלקים לניקוי, ניקוי צמיגים, יישומי סיבוב עצמי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1336,10 +1431,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183528",
       "id": "1183528",
       "sku": "",
-      "images": ["Cat_456349_65.jpg"],
+      "images": [
+        "Cat_456349_65.jpg"
+      ],
       "previewImage": "Cat_456349_65.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "מחיצה המתאימה להרכבה איכות ודיוק גבוהים יישומים: טכנולוגית ניקוי בלחץ גבוה, חלקים לניקוי, ניקוי צמיגים, יישומי סיבוב עצמי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1351,10 +1448,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183529",
       "id": "1183529",
       "sku": "",
-      "images": ["Cat_456349_66.jpg"],
+      "images": [
+        "Cat_456349_66.jpg"
+      ],
       "previewImage": "Cat_456349_66.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "מערכת מיסב משולשת במהירות גבוהה אורך חיים ארוך יישומים: כוח דחיפה ורדיאלי, זרם גבוה, מערכות שטיפה אוטומטית, סלילי צינור בלחץ גבוה",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1366,10 +1465,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183526",
       "id": "1183526",
       "sku": "",
-      "images": ["Cat_456349_63.jpg"],
+      "images": [
+        "Cat_456349_63.jpg"
+      ],
       "previewImage": "Cat_456349_63.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "מבנה פלדת אל חלד מלא מערכת מיסב זוגי עיצוב קשיח יישומים: מערכות שטיפה אוטומטיות, יישומים תעשייתיים, סלילי צינור בלחץ גבוה, זרם גבוה. כמות גבוהה של סיבובים לדקה",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1381,10 +1482,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183525",
       "id": "1183525",
       "sku": "",
-      "images": ["Cat_456349_62.jpg"],
+      "images": [
+        "Cat_456349_62.jpg"
+      ],
       "previewImage": "Cat_456349_62.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1396,10 +1499,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183524",
       "id": "1183524",
       "sku": "",
-      "images": ["Cat_456349_61.jpg"],
+      "images": [
+        "Cat_456349_61.jpg"
+      ],
       "previewImage": "Cat_456349_61.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1411,25 +1516,33 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183523",
       "id": "1183523",
       "sku": "",
-      "images": ["Cat_456349_391.jpg"],
+      "images": [
+        "Cat_456349_391.jpg"
+      ],
       "previewImage": "Cat_456349_391.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "https://www.mosmatic.com/downloads/catalog/MA24/#page=77",
       "subHeader": "",
-      "bulletPoints": ["מייסב הזזה", "פלדת אל חלד", "ללא צורך בתחזוקה"]
+      "bulletPoints": [
+        "מייסב הזזה",
+        "פלדת אל חלד",
+        "ללא צורך בתחזוקה"
+      ]
     },
     {
       "name": "מחבר סיבובי WDB",
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183522",
       "id": "1183522",
       "sku": "",
-      "images": ["Cat_456349_59.jpg"],
+      "images": [
+        "Cat_456349_59.jpg"
+      ],
       "previewImage": "Cat_456349_59.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1441,10 +1554,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183521",
       "id": "1183521",
       "sku": "",
-      "images": ["Cat_456349_58.jpg"],
+      "images": [
+        "Cat_456349_58.jpg"
+      ],
       "previewImage": "Cat_456349_58.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "אוגן להתקנה מהירה מיסבים אטומים מפלדת אל חלד יישומים: מהירות סיבוב לדקה גבוהה, לחץ גבוה, יישומי סיבוב עצמי, מנקי תקרה, חלקים לניקוי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1456,10 +1571,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183520",
       "id": "1183520",
       "sku": "",
-      "images": ["Cat_456349_57.jpg"],
+      "images": [
+        "Cat_456349_57.jpg"
+      ],
       "previewImage": "Cat_456349_57.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "מיסבים אטומים מפלדת אל חלד אזהרת כשלון איטום באמצעות חורי טפטוף. יישומים: לחץ גבוה/מהירות סיבוב לדקה, כוח דחיפה ורדיקלי, יישומי סיבוב עצמי, ניקוי משטחים, חלקים לניקוי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1471,10 +1588,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1183518",
       "id": "1183518",
       "sku": "",
-      "images": ["Cat_456349_55.jpg"],
+      "images": [
+        "Cat_456349_55.jpg"
+      ],
       "previewImage": "Cat_456349_55.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "מערכת מיסבים פי ארבעה מערכת איטום לתרכובות פחמן יישומים:  יישומים מתחת למים (מי מלח, מים מתוקים), לחץ גבוה/מהירות סיבוב לדקה, כוח דחיפה ורדיקלי",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1486,10 +1605,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179435",
       "id": "1179435",
       "sku": "",
-      "images": ["Cat_456349_30.jpg"],
+      "images": [
+        "Cat_456349_30.jpg"
+      ],
       "previewImage": "Cat_456349_30.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1505,10 +1626,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179434",
       "id": "1179434",
       "sku": "",
-      "images": ["Cat_456349_29.jpg"],
+      "images": [
+        "Cat_456349_29.jpg"
+      ],
       "previewImage": "Cat_456349_29.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "https://www.mosmatic.com/downloads/catalog/MA24/#page=75",
@@ -1524,10 +1647,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179433",
       "id": "1179433",
       "sku": "",
-      "images": ["Cat_456349_28.jpg"],
+      "images": [
+        "Cat_456349_28.jpg"
+      ],
       "previewImage": "Cat_456349_28.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1543,10 +1668,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179432",
       "id": "1179432",
       "sku": "",
-      "images": ["Cat_456349_27.jpg"],
+      "images": [
+        "Cat_456349_27.jpg"
+      ],
       "previewImage": "Cat_456349_27.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "https://www.mosmatic.com/downloads/catalog/MA24/#page=73",
@@ -1562,10 +1689,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179431",
       "id": "1179431",
       "sku": "",
-      "images": ["Cat_456349_26.jpg"],
+      "images": [
+        "Cat_456349_26.jpg"
+      ],
       "previewImage": "Cat_456349_26.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1577,14 +1706,16 @@
       ]
     },
     {
-      "name": "מחבר סיבובי - סביבל DGK",
+      "name": "מחבר סיבובי DGK",
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179427",
       "id": "1179427",
       "sku": "",
-      "images": ["Cat_456349_22.jpg"],
+      "images": [
+        "Cat_456349_22.jpg"
+      ],
       "previewImage": "Cat_456349_22.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "https://www.mosmatic.com/downloads/catalog/MA24/#page=70",
@@ -1600,10 +1731,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179429",
       "id": "1179429",
       "sku": "",
-      "images": ["Cat_456349_24.jpg"],
+      "images": [
+        "Cat_456349_24.jpg"
+      ],
       "previewImage": "Cat_456349_24.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "https://www.mosmatic.com/downloads/catalog/MA24/#page=69",
@@ -1619,10 +1752,12 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1179428",
       "id": "1179428",
       "sku": "",
-      "images": ["Cat_456349_23.jpg"],
+      "images": [
+        "Cat_456349_23.jpg"
+      ],
       "previewImage": "Cat_456349_23.jpg",
       "categoryId": "LI_A_68310",
-      "categoryName": "מחבר סיבובי - סביבל",
+      "categoryName": "מחבר סיבובי",
       "description": "",
       "pdfUrl": "",
       "videoUrl": "",
@@ -1638,7 +1773,9 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1423725",
       "id": "1423725",
       "sku": "",
-      "images": ["Cat_456349_165.png"],
+      "images": [
+        "Cat_456349_165.png"
+      ],
       "previewImage": "Cat_456349_165.png",
       "categoryId": "LI_A_68311",
       "categoryName": "מכונות שטיפה בלחץ מים",
@@ -1653,7 +1790,9 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1411648",
       "id": "1411648",
       "sku": "",
-      "images": ["Cat_456349_161.jpg"],
+      "images": [
+        "Cat_456349_161.jpg"
+      ],
       "previewImage": "Cat_456349_161.jpg",
       "categoryId": "LI_A_68311",
       "categoryName": "מכונות שטיפה בלחץ מים",
@@ -1850,7 +1989,11 @@
       "pdfUrl": "",
       "videoUrl": "",
       "subHeader": "אין אי סדר שיעמוד בפני המכונה הזו. מנקה המשטחים הזה מתאים לניקוי משטחים גדולים כגון: תחנות דלק, מגרשי חניה, מגרשי בית ספר, מקומות ציבוריים, רציפים ועוד.",
-      "bulletPoints": ["אקדח שטיפה בנוסף", "הרכב מוצק", "גובה מתכוונן"]
+      "bulletPoints": [
+        "אקדח שטיפה בנוסף",
+        "הרכב מוצק",
+        "גובה מתכוונן"
+      ]
     },
     {
       "name": "הליקופטר + אקדח (Contractor Big)",
@@ -1875,7 +2018,11 @@
       "pdfUrl": "",
       "videoUrl": "",
       "subHeader": "אין אי סדר שיעמוד בפני המכונה הזו. מנקה המשטחים הזה מתאים לניקוי משטחים גדולים כגון: תחנות דלק, מגרשי חניה, מגרשי בית ספר, מקומות ציבוריים, רציפים ועוד.",
-      "bulletPoints": ["אקדח שטיפה בנוסף", "הרכב מוצק", "גובה מתכוונן"]
+      "bulletPoints": [
+        "אקדח שטיפה בנוסף",
+        "הרכב מוצק",
+        "גובה מתכוונן"
+      ]
     },
     {
       "name": "מסחרי (Commercial)",
@@ -1997,7 +2144,11 @@
       "pdfUrl": "",
       "videoUrl": "",
       "subHeader": "עם דגם ההוריקן Pro תוכל לנקות מתחת לכלי רכב, אך לא רק, באפשרותך לסובב את ראש הריסוס על צירו ולנקות בזווית שונות.",
-      "bulletPoints": ["ארגונומי ורב גוני", "מוכן לשימוש", "קל לתמרון"]
+      "bulletPoints": [
+        "ארגונומי ורב גוני",
+        "מוכן לשימוש",
+        "קל לתמרון"
+      ]
     },
     {
       "name": "הוריקן פרו (Hurricane Pro)",
@@ -2021,7 +2172,11 @@
       "pdfUrl": "",
       "videoUrl": "",
       "subHeader": "עם דגם ההוריקן Pro תוכל לנקות מתחת לכלי רכב, אך לא רק, באפשרותך לסובב את ראש הריסוס על צירו ולנקות בזווית שונות.",
-      "bulletPoints": ["ארגונומי ורב גוני", "מוכן לשימוש", "קל לתמרון"]
+      "bulletPoints": [
+        "ארגונומי ורב גוני",
+        "מוכן לשימוש",
+        "קל לתמרון"
+      ]
     },
     {
       "name": "מנקה גגות (Roof Cleaner)",
@@ -2056,7 +2211,9 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=2554740",
       "id": "2554740",
       "sku": "",
-      "images": ["Cat_456349_390.jpg"],
+      "images": [
+        "Cat_456349_390.jpg"
+      ],
       "previewImage": "Cat_456349_390.jpg",
       "categoryId": "LI_A_68312",
       "categoryName": "ציוד ניקוי מקצועי בלחץ מים",
@@ -2085,7 +2242,10 @@
       "pdfUrl": "",
       "videoUrl": "",
       "subHeader": "לאלו שאין ברשותם מכשיר של Mosmatic ורוצים לשדרג את הציוד הקיים. ערכת ההמרה תאפשר לך להחליף את חלקי העבודה החשובים של מנקה המשטחים שלך ברכיבים באיכות גבוהה של Mosmatic.",
-      "bulletPoints": ["שדרוג בעלות ריאלית", "קל להרכבה"]
+      "bulletPoints": [
+        "שדרוג בעלות ריאלית",
+        "קל להרכבה"
+      ]
     },
     {
       "name": "מנקה תעלות (Duct Cleaner)",
@@ -2335,7 +2495,10 @@
       "pdfUrl": "",
       "videoUrl": "",
       "subHeader": "דיזה טורבו עד 415 בר, מגביר את יעילות הניקיון לעומת ניקיון בדיזה מניפה שטוחה.",
-      "bulletPoints": ["התקנה פשוטה", "קיים במספר גדלים"]
+      "bulletPoints": [
+        "התקנה פשוטה",
+        "קיים במספר גדלים"
+      ]
     },
     {
       "name": "פרזול (Fittings)",
@@ -2420,7 +2583,11 @@
       "pdfUrl": "",
       "videoUrl": "",
       "subHeader": "VER",
-      "bulletPoints": ["קל להתקנה.", "קל אך קשיח.", "עיצוב קומפקטי."]
+      "bulletPoints": [
+        "קל להתקנה.",
+        "קל אך קשיח.",
+        "עיצוב קומפקטי."
+      ]
     },
     {
       "name": "חלקים (Accessories)",
@@ -2451,7 +2618,9 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1426888",
       "id": "1426888",
       "sku": "",
-      "images": ["Cat_456349_167.jpg"],
+      "images": [
+        "Cat_456349_167.jpg"
+      ],
       "previewImage": "Cat_456349_167.jpg",
       "categoryId": "LI_A_68313",
       "categoryName": "שואבי אבק",
@@ -2478,7 +2647,9 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1379938",
       "id": "1379938",
       "sku": "",
-      "images": ["Cat_456349_102.jpg"],
+      "images": [
+        "Cat_456349_102.jpg"
+      ],
       "previewImage": "Cat_456349_102.jpg",
       "categoryId": "LI_A_68313",
       "categoryName": "שואבי אבק",
@@ -2497,7 +2668,9 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1379937",
       "id": "1379937",
       "sku": "",
-      "images": ["Cat_456349_101.jpg"],
+      "images": [
+        "Cat_456349_101.jpg"
+      ],
       "previewImage": "Cat_456349_101.jpg",
       "categoryId": "LI_A_68313",
       "categoryName": "שואבי אבק",
@@ -2518,7 +2691,9 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1379936",
       "id": "1379936",
       "sku": "",
-      "images": ["Cat_456349_100.jpg"],
+      "images": [
+        "Cat_456349_100.jpg"
+      ],
       "previewImage": "Cat_456349_100.jpg",
       "categoryId": "LI_A_68313",
       "categoryName": "שואבי אבק",
@@ -2541,7 +2716,9 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1373896",
       "id": "1373896",
       "sku": "",
-      "images": ["Cat_456349_79.jpg"],
+      "images": [
+        "Cat_456349_79.jpg"
+      ],
       "previewImage": "Cat_456349_79.jpg",
       "categoryId": "LI_A_68313",
       "categoryName": "שואבי אבק",
@@ -2576,7 +2753,9 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1910579",
       "id": "1910579",
       "sku": "",
-      "images": ["Cat_456349_183.jpg"],
+      "images": [
+        "Cat_456349_183.jpg"
+      ],
       "previewImage": "Cat_456349_183.jpg",
       "categoryId": "LI_A_126371",
       "categoryName": "R+M",
@@ -2591,7 +2770,9 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1910578",
       "id": "1910578",
       "sku": "",
-      "images": ["Cat_456349_182.jpg"],
+      "images": [
+        "Cat_456349_182.jpg"
+      ],
       "previewImage": "Cat_456349_182.jpg",
       "categoryId": "LI_A_126371",
       "categoryName": "R+M",
@@ -2606,7 +2787,9 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1910577",
       "id": "1910577",
       "sku": "",
-      "images": ["Cat_456349_181.jpg"],
+      "images": [
+        "Cat_456349_181.jpg"
+      ],
       "previewImage": "Cat_456349_181.jpg",
       "categoryId": "LI_A_126371",
       "categoryName": "R+M",
@@ -2621,7 +2804,9 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1910576",
       "id": "1910576",
       "sku": "",
-      "images": ["Cat_456349_180.jpg"],
+      "images": [
+        "Cat_456349_180.jpg"
+      ],
       "previewImage": "Cat_456349_180.jpg",
       "categoryId": "LI_A_126371",
       "categoryName": "R+M",
@@ -2636,7 +2821,9 @@
       "url": "https://ben-gigi.co.il/catalog.asp?page=newshowprod.asp&prodid=1910575",
       "id": "1910575",
       "sku": "",
-      "images": ["Cat_456349_179.jpg"],
+      "images": [
+        "Cat_456349_179.jpg"
+      ],
       "previewImage": "Cat_456349_179.jpg",
       "categoryId": "LI_A_126371",
       "categoryName": "R+M",

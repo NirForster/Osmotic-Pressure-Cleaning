@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import Articles from "./pages/Articles";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
+import ProductsPage from "./pages/products/Products";
 import {
   LocalCarWash,
   Sync,
@@ -17,13 +18,15 @@ export const productCategories = [
     id: "accessories",
     path: "accessories",
     name: "אביזרים לשטיפת רכב",
+    categoryDbId: "LI_A_68309",
     icon: <LocalCarWash sx={{ fontSize: "inherit" }} />,
     description: "אביזרים איכותיים לשטיפת רכב בלחץ מים",
   },
   {
     id: "swivel-connectors",
     path: "swivel-connectors",
-    name: "מחבר סיבובי - סביבל",
+    name: "מחבר סיבובי",
+    categoryDbId: "LI_A_68310",
     icon: <Sync sx={{ fontSize: "inherit" }} />,
     description: "מחברים סיבוביים מקצועיים למכונות שטיפה",
   },
@@ -31,6 +34,7 @@ export const productCategories = [
     id: "pressure-washers",
     path: "pressure-washers",
     name: "מכונות שטיפה בלחץ מים",
+    categoryDbId: "LI_A_68311",
     icon: <KeyboardTab sx={{ fontSize: "inherit" }} />,
     description: "מכונות שטיפה בלחץ מים למגוון שימושים",
   },
@@ -38,6 +42,7 @@ export const productCategories = [
     id: "professional-equipment",
     path: "professional-equipment",
     name: "ציוד ניקוי מקצועי בלחץ מים",
+    categoryDbId: "LI_A_68312",
     icon: <WaterDrop sx={{ fontSize: "inherit" }} />,
     description: "ציוד ניקוי מקצועי לשימוש תעשייתי",
   },
@@ -45,6 +50,7 @@ export const productCategories = [
     id: "vacuum-cleaners",
     path: "vacuum-cleaners",
     name: "שואבי אבק",
+    categoryDbId: "LI_A_68313",
     icon: "🌪️",
     description: "שואבי אבק מקצועיים לכל סוג פסולת",
   },
@@ -52,6 +58,7 @@ export const productCategories = [
     id: "rm-brand",
     path: "rm-brand",
     name: "R+M",
+    categoryDbId: "LI_A_126371",
     icon: "⭐",
     description: "מוצרי R+M המובילים בתחום",
   },
@@ -62,6 +69,7 @@ const AppRouter = () => {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/articles" element={<Articles />} />
+      <Route path="/products" element={<ProductsPage />} />
       <Route path="/products/:categoryPath" element={<CategoryPage />} />
       <Route path="/product/:id" element={<ProductPage />} />
     </Routes>
