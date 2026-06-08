@@ -31,6 +31,7 @@ import {
   ShoppingCart as ShoppingCartIcon,
 } from "@mui/icons-material";
 import { productCategories } from "../Router";
+import { CONTACT_PHONE_DISPLAY, CONTACT_PHONE_TEL } from "../config/siteConfig";
 import { useCart } from "../context/CartContext";
 
 const Navbar = () => {
@@ -257,10 +258,21 @@ const Navbar = () => {
         >
           צור קשר
         </Typography>
-        <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1 }}>
+        <Box
+          component="a"
+          href={`tel:${CONTACT_PHONE_TEL}`}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            gap: 1,
+            mb: 1,
+            textDecoration: "none",
+            color: "inherit",
+          }}
+        >
           <PhoneIcon sx={{ fontSize: 18, color: "#6b7280" }} />
           <Typography variant="body2" sx={{ color: "#6b7280" }}>
-            0506362755
+            {CONTACT_PHONE_DISPLAY}
           </Typography>
         </Box>
         <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 3 }}>

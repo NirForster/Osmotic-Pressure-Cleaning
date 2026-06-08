@@ -17,7 +17,11 @@ import {
   Article as ArticleIcon,
 } from "@mui/icons-material";
 import { productCategories } from "../Router";
-import { WHATSAPP_URL } from "../config/siteConfig";
+import {
+  CONTACT_PHONE_DISPLAY,
+  CONTACT_PHONE_TEL,
+  WHATSAPP_URL,
+} from "../config/siteConfig";
 
 const Footer = () => {
   const quickLinks = [
@@ -39,8 +43,8 @@ const Footer = () => {
   const contactInfo = [
     {
       icon: <PhoneIcon />,
-      text: "0506362755",
-      href: "tel:+972506362755",
+      text: CONTACT_PHONE_DISPLAY,
+      href: `tel:${CONTACT_PHONE_TEL}`,
     },
     {
       icon: <EmailIcon />,

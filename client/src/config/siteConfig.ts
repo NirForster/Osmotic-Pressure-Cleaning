@@ -1,6 +1,10 @@
 export const SITE_NAME = "Ben Gigi";
 
-export const WHATSAPP_NUMBER = "972506362755";
+// Phone for navbar, homepage, and footer "צור קשר"
+export const CONTACT_PHONE_DISPLAY = "0506362755";
+export const CONTACT_PHONE_TEL = "+972506362755";
+
+export const WHATSAPP_NUMBER = "972526362107";
 
 export const WHATSAPP_GREETING =
   "שלום, אשמח לקבל מידע אודות מוצרי Ben Gigi";

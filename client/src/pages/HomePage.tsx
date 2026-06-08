@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { getAssetUrl } from "../config/cloudinaryAssets";
+import { CONTACT_PHONE_DISPLAY, CONTACT_PHONE_TEL } from "../config/siteConfig";
 import SEO from "../components/SEO";
 import {
   Box,
@@ -99,7 +100,7 @@ const HomePage = () => {
         />
       ),
       ctaText: "צור קשר",
-      ctaAction: () => window.open("tel:+972506362755"),
+      ctaAction: () => window.open(`tel:${CONTACT_PHONE_TEL}`),
       bgGradient: "linear-gradient(135deg, #111827 0%, #1e293b 100%)",
     },
   ];
@@ -901,7 +902,7 @@ const HomePage = () => {
               variant="contained"
               size="large"
               startIcon={<PhoneIcon />}
-              href="tel:+972506362755"
+              href={`tel:${CONTACT_PHONE_TEL}`}
               sx={{
                 backgroundColor: "#0ea5e9",
                 px: 4,
@@ -923,7 +924,7 @@ const HomePage = () => {
                 transition: "all 0.3s ease",
               }}
             >
-              חייגו עכשיו: 0506362755
+              חייגו עכשיו: {CONTACT_PHONE_DISPLAY}
             </Button>
           </Box>
         </Container>
